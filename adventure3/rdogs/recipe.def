@@ -1,0 +1,19 @@
+Bootstrap: docker
+From: debian:latest
+
+%labels
+    MAINTAINER icaoberg
+    EMAIL icaoberg@psc.edu
+    SUPPORT help@psc.edu
+    REPOSITORY http://gitub.com/pscedu/practical-intro-to-apptainer
+    COPYRIGHT Copyright © 2024 Pittsburgh Supercomputing Center. All Rights Reserved.
+    VERSION 1.0
+
+%post
+    apt update
+    apt install -y curl catimg jq
+
+%runscript
+    curl --silent -X GET https://dog.ceo/api/breeds/image/random | jq . | grep message | cut -d":" -f2-3 
+| cut -d"," -f1 | xargs -I {} curl --silent --output "image.png" {} && convert image.png -resize 10% 
+image.png && catimg image.png
