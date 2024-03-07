@@ -6,4 +6,4 @@
 IMAGE=apptainer-rdog-1.0.sif
 DEFINITION=recipe.def
 
-apptainer build -F $IMAGE $DEFINITION
+sudo apptainer build -F $IMAGE $DEFINITION

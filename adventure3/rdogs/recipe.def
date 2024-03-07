@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: debian:latest
+From: ubuntu:latest
 
 %labels
     MAINTAINER icaoberg
@@ -11,9 +11,8 @@ From: debian:latest
 
 %post
     apt update
-    apt install -y curl catimg jq
+    apt install -y curl catimg jq snapd
+    snap install imagemagick
 
 %runscript
-    curl --silent -X GET https://dog.ceo/api/breeds/image/random | jq . | grep message | cut -d":" -f2-3 
-| cut -d"," -f1 | xargs -I {} curl --silent --output "image.png" {} && convert image.png -resize 10% 
-image.png && catimg image.png
+    curl --silent -X GET "https://dog.ceo/api/breeds/image/random" | jq . | grep message | cut -d":" -f2-3 | cut -d"," -f1 | xargs -I {} curl --silent --output "image.png" {} && convert image.png -resize 10% image.png && catimg image.png
