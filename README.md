@@ -1,6 +1,7 @@
 # A Practical Introduction to Apptainer on Bridges-2
 
 ![](./images/logo.png)
+
 This repository has the answers for the exercises presented in the `A Practical Introduction to Apptainer on Bridges-2` held in Puerto Rico.
 
 ## About the workshop
