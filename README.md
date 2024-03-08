@@ -16,7 +16,7 @@ Apptainer, formerly known as Singularity, streamlines container creation and exe
 - Deployment of useful utilities using Anaconda
 - Initiation of services
 - Multi-layered builds
-- Containerization and adherence to FAIR principles (Findable, Accessible, Interoperable, Reusable)
+- Containerization and adherence to [FAIR principles (Findable, Accessible, Interoperable, Reusable)](https://www.go-fair.org/fair-principles/)
 
 This workshop is open to members of [PR-INBRE](https://inbre.hpcf.upr.edu/) Bioinformatics Community of Practice (BiCoP).
 
