@@ -6,4 +6,5 @@
 IMAGE=apptainer-rdog-1.0.sif
 DEFINITION=recipe.def
 
-apptainer build -F $IMAGE $DEFINITION
+module load SingularityCE/4.1.2
+singularity build --remote $IMAGE $DEFINITION
