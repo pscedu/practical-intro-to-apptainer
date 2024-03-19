@@ -1,0 +1,271 @@
+Oct-04 01:21:38.384 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/bamtofastq -r 2.0.0 -profile test --outdir ./results
+Oct-04 01:21:38.526 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.4
+Oct-04 01:21:38.545 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/jet/home/icaoberg/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3-patch1,nf-tower@1.5.12,nf-wave@0.8.4
+Oct-04 01:21:38.557 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-04 01:21:38.558 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-04 01:21:38.560 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-04 01:21:38.570 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-04 01:21:38.584 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /jet/home/icaoberg/.nextflow/scm
+Oct-04 01:21:39.608 [main] DEBUG nextflow.scm.AssetManager - Git config: /jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/bamtofastq.git
+Oct-04 01:21:39.626 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Oct-04 01:21:39.635 [main] DEBUG nextflow.scm.AssetManager - Git config: /jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/bamtofastq.git
+Oct-04 01:21:40.281 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq/nextflow.config
+Oct-04 01:21:40.282 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq/nextflow.config
+Oct-04 01:21:40.292 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
+Oct-04 01:21:41.063 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [cfc_dev, ifb_core, denbi_qbic, alice, mjolnir_globe, uppmax, incliva, uge, rosalind_uge, test_no_bai, lugh, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, tigem, tubingen_apg, google, test_chr, apollo, ipop_up, googlels, test_collate_fast, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, munin, arm, rosalind, hasta, cfc, uzh, ebi_codon_slurm, ebc, ku_sund_dangpu, ccga_dx, crick, marvin, biohpc_gen, shifter, mana, mamba, unc_lccc, wehi, awsbatch, wustl_htcf, test_no_qc, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, sage, cambridge, podman, ebi_codon, cheaha, xanadu, test, computerome, ucd_sonic, seg_globe, sanger, dkfz, test_no_stats, pasteur, ethz_euler, test_full, tuos_stanage, azurebatch, hki, test_cram, crukmi, docker, engaging, gis, hypatia, psmn, eva, fgcz, conda, crg, singularity, uw_hyak_pedslabs, prince, utd_sysbio, test_no_crai, debug, genouest, cbe, phoenix, gitpod, seawulf, fub_curta, uct_hpc, aws_tower, binac]
+Oct-04 01:21:41.094 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Oct-04 01:21:41.095 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/nf-core/bamtofastq` [lethal_gates] DSL2 - revision: ceae4d6d08 [2.0.0]
+Oct-04 01:21:41.095 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-04 01:21:41.095 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-04 01:21:41.099 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /jet/home/icaoberg/.nextflow/secrets/store.json
+Oct-04 01:21:41.102 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5345dfe8] - activable => nextflow.secret.LocalSecretsProvider@5345dfe8
+Oct-04 01:21:41.167 [main] DEBUG nextflow.Session - Session UUID: 1e8d6f43-c608-4fe9-9d21-a87e0effa236
+Oct-04 01:21:41.167 [main] DEBUG nextflow.Session - Run name: lethal_gates
+Oct-04 01:21:41.168 [main] DEBUG nextflow.Session - Executor pool size: 10
+Oct-04 01:21:41.178 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-04 01:21:41.199 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.4 build 5881
+  Created: 25-09-2023 15:34 UTC (11:34 EDT)
+  System: Linux 4.18.0-193.28.1.el8_2.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 17.0.6+10-LTS
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 8479@r360.ib.bridges2.psc.edu [10.8.10.105]
+  CPUs: 10 - Mem: 19.5 GB (19.1 GB) - Swap: 0 (0)
+Oct-04 01:21:41.217 [main] DEBUG nextflow.Session - Work-dir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work [lustre]
+Oct-04 01:21:41.217 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq/bin
+Oct-04 01:21:41.228 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-04 01:21:41.236 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-04 01:21:41.309 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-04 01:21:41.329 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Oct-04 01:21:41.872 [main] DEBUG nextflow.Session - Session start
+Oct-04 01:21:41.876 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/results/pipeline_info/execution_trace_2023-10-04_01-21-40.txt
+Oct-04 01:21:41.888 [main] DEBUG nextflow.Session - Using default localLib path: /jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq/lib
+Oct-04 01:21:41.895 [main] DEBUG nextflow.Session - Adding to the classpath library: /jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq/lib
+Oct-04 01:21:41.895 [main] DEBUG nextflow.Session - Adding to the classpath library: /jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq/lib/nfcore_external_java_deps.jar
+Oct-04 01:21:42.948 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-04 01:21:42.988 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/bamtofastq v2.0.0-gceae4d6[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision                  : [0;32m2.0.0[0m
+  [0;34mrunName                   : [0;32mlethal_gates[0m
+  [0;34mlaunchDir                 : [0;32m/ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta[0m
+  [0;34mworkDir                   : [0;32m/ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work[0m
+  [0;34mprojectDir                : [0;32m/jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq[0m
+  [0;34muserName                  : [0;32micaoberg[0m
+  [0;34mprofile                   : [0;32mtest[0m
+  [0;34mconfigFiles               : [0;32m/jet/home/icaoberg/.nextflow/assets/nf-core/bamtofastq/nextflow.config[0m
+
+[1mInput/output options[0m
+  [0;34minput                     : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/bamtofastq/samplesheet/test_bam_samplesheet.csv[0m
+  [0;34moutdir                    : [0;32m./results[0m
+
+[1mMain options[0m
+  [0;34mchr                       : [0;32mnull[0m
+
+[1mReference genome options[0m
+  [0;34migenomes_ignore           : [0;32mtrue[0m
+
+[1mInstitutional config options[0m
+  [0;34mconfig_profile_name       : [0;32mTest profile[0m
+  [0;34mconfig_profile_description: [0;32mMinimal test dataset to check pipeline function[0m
+
+[1mMax job request options[0m
+  [0;34mmax_cpus                  : [0;32m2[0m
+  [0;34mmax_memory                : [0;32m6.GB[0m
+  [0;34mmax_time                  : [0;32m6.h[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use nf-core/bamtofastq for your analysis please cite:
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.284730479* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/bamtofastq/blob/master/CITATIONS.md
+-[2m----------------------------------------------------[0m-
+Oct-04 01:21:45.201 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:PREPARE_INDICES:SAMTOOLS_INDEX
+Oct-04 01:21:45.202 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_INDEX` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:PREPARE_INDICES:SAMTOOLS_INDEX
+Oct-04 01:21:45.207 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.207 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.212 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-04 01:21:45.217 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=10; memory=19.5 GB; capacity=10; pollInterval=100ms; dumpInterval=5m
+Oct-04 01:21:45.282 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_IDXSTATS
+Oct-04 01:21:45.283 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_IDXSTATS` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_IDXSTATS
+Oct-04 01:21:45.285 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.285 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.289 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_FLAGSTAT
+Oct-04 01:21:45.289 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_FLAGSTAT` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_FLAGSTAT
+Oct-04 01:21:45.291 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.291 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.296 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_STATS
+Oct-04 01:21:45.296 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_STATS` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_STATS
+Oct-04 01:21:45.297 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.297 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.304 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION
+Oct-04 01:21:45.304 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTQC_PRE_CONVERSION` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION
+Oct-04 01:21:45.305 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.305 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.314 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:CHECK_IF_PAIRED_END
+Oct-04 01:21:45.315 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CHECK_IF_PAIRED_END` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:CHECK_IF_PAIRED_END
+Oct-04 01:21:45.316 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.316 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.327 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:SAMTOOLS_COLLATEFASTQ_SINGLE_END
+Oct-04 01:21:45.328 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_COLLATEFASTQ_SINGLE_END` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:SAMTOOLS_COLLATEFASTQ_SINGLE_END
+Oct-04 01:21:45.330 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.330 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.338 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_MAP_MAP
+Oct-04 01:21:45.339 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_VIEW_MAP_MAP` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_MAP_MAP
+Oct-04 01:21:45.340 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.340 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.345 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_UNMAP_UNMAP
+Oct-04 01:21:45.346 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_VIEW_UNMAP_UNMAP` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_UNMAP_UNMAP
+Oct-04 01:21:45.347 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.347 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.352 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_UNMAP_MAP
+Oct-04 01:21:45.352 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_VIEW_UNMAP_MAP` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_UNMAP_MAP
+Oct-04 01:21:45.353 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.353 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.357 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_MAP_UNMAP
+Oct-04 01:21:45.358 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_VIEW_MAP_UNMAP` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_MAP_UNMAP
+Oct-04 01:21:45.359 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.359 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.370 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_MERGE_UNMAP
+Oct-04 01:21:45.370 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMTOOLS_MERGE_UNMAP` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_MERGE_UNMAP
+Oct-04 01:21:45.371 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.371 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.377 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:COLLATE_FASTQ_UNMAP
+Oct-04 01:21:45.377 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COLLATE_FASTQ_UNMAP` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:COLLATE_FASTQ_UNMAP
+Oct-04 01:21:45.378 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.378 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.383 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:COLLATE_FASTQ_MAP
+Oct-04 01:21:45.383 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:COLLATE_FASTQ_MAP` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:COLLATE_FASTQ_MAP
+Oct-04 01:21:45.384 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.384 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.390 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:CAT_FASTQ
+Oct-04 01:21:45.390 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CAT_FASTQ` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:CAT_FASTQ
+Oct-04 01:21:45.391 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.391 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.403 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:FASTQC_POST_CONVERSION
+Oct-04 01:21:45.403 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTQC_POST_CONVERSION` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:FASTQC_POST_CONVERSION
+Oct-04 01:21:45.404 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.404 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.431 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Oct-04 01:21:45.432 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CUSTOM_DUMPSOFTWAREVERSIONS` matches process NFCORE_BAMTOFASTQ:BAMTOFASTQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Oct-04 01:21:45.432 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.432 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.476 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_BAMTOFASTQ:BAMTOFASTQ:MULTIQC
+Oct-04 01:21:45.477 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 01:21:45.477 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 01:21:45.481 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC, SAMTOOLS_VIEW_MAP_MAP, NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_MAP_UNMAP, SAMTOOLS_CHR, NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_STATS, MULTIQC, NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION, NFCORE_BAMTOFASTQ:BAMTOFASTQ:FASTQC_POST_CONVERSION, SAMTOOLS_PE, NFCORE_BAMTOFASTQ:BAMTOFASTQ:CHECK_IF_PAIRED_END, SAMTOOLS_CHR_INDEX, COLLATE_FASTQ_MAP, SAMTOOLS_MERGE, NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_UNMAP_UNMAP, NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:COLLATE_FASTQ_MAP, SAMTOOLS_VIEW_UNMAP_UNMAP, SAMTOOLS_VIEW_UNMAP_MAP, SAMTOOLS_VIEW, FASTQC_PRE_CONVERSION, CAT_FASTQ, COLLATE_FASTQ_UNMAP, SAMTOOLS_FAIDX, NFCORE_BAMTOFASTQ:BAMTOFASTQ:MULTIQC, SAMTOOLS_STATS, SAMTOOLS_FLAGSTAT, SAMTOOLS_COLLATEFASTQ_SINGLE_END, NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_FLAGSTAT, NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_MAP_MAP, FASTQC_POST_CONVERSION, NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:CAT_FASTQ, SAMTOOLS_VIEW_MAP_UNMAP, NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_MERGE_UNMAP, CHECK_IF_PAIRED_END, NFCORE_BAMTOFASTQ:BAMTOFASTQ:PREPARE_INDICES:SAMTOOLS_INDEX, SAMTOOLS_COLLATEFASTQ, NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_UNMAP_MAP, NFCORE_BAMTOFASTQ:BAMTOFASTQ:CUSTOM_DUMPSOFTWAREVERSIONS, SAMTOOLS_IDXSTATS, CUSTOM_DUMPSOFTWAREVERSIONS, NFCORE_BAMTOFASTQ:BAMTOFASTQ:SAMTOOLS_COLLATEFASTQ_SINGLE_END, NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:COLLATE_FASTQ_UNMAP, SAMTOOLS_MERGE_UNMAP, SAMTOOLS_INDEX, NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_IDXSTATS
+Oct-04 01:21:45.485 [main] DEBUG nextflow.Session - Igniting dataflow network (37)
+Oct-04 01:21:45.490 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:PREPARE_INDICES:SAMTOOLS_INDEX
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_IDXSTATS
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_FLAGSTAT
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_STATS
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:CHECK_IF_PAIRED_END
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:SAMTOOLS_COLLATEFASTQ_SINGLE_END
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_MAP_MAP
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_UNMAP_UNMAP
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_UNMAP_MAP
+Oct-04 01:21:45.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_MAP_UNMAP
+Oct-04 01:21:45.492 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_MERGE_UNMAP
+Oct-04 01:21:45.492 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:COLLATE_FASTQ_UNMAP
+Oct-04 01:21:45.492 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:COLLATE_FASTQ_MAP
+Oct-04 01:21:45.492 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:CAT_FASTQ
+Oct-04 01:21:45.493 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:FASTQC_POST_CONVERSION
+Oct-04 01:21:45.493 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Oct-04 01:21:45.493 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:MULTIQC
+Oct-04 01:21:45.493 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-04 01:21:45.493 [main] DEBUG nextflow.Session - Session await
+Oct-04 01:21:45.571 [Actor Thread 1] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.011 s; total time: 0.012 s
+Oct-04 01:21:45.571 [Actor Thread 15] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.011 s; total time: 0.012 s
+Oct-04 01:21:45.577 [Actor Thread 1] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work/collect-file/44bf341eb7af3f8a11cd81f147a36dab
+Oct-04 01:21:45.577 [Actor Thread 15] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work/collect-file/afd84ea323aabee53f95c61b53fa119c
+Oct-04 01:21:45.585 [Actor Thread 15] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-13678949756104084403
+Oct-04 01:21:45.585 [Actor Thread 1] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-7968631107466575930
+Oct-04 01:21:46.384 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://github.com/nf-core/test-datasets/raw/bamtofastq/test-datasets/data/genomics/homo_sapiens/illumina/bam/test.paired_end.sorted.bam to work dir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work/stage-1e8d6f43-c608-4fe9-9d21-a87e0effa236/f1/31faf859100b4cc90cb168a769a90f/test.paired_end.sorted.bam
+Oct-04 01:21:46.627 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-04 01:21:46.628 [Task submitter] INFO  nextflow.Session - [e0/cc5143] Submitted process > NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test)
+Oct-04 01:21:46.985 [FileTransfer-2] DEBUG nextflow.file.FilePorter - Copying foreign file https://github.com/nf-core/test-datasets/raw/bamtofastq/test-datasets/data/genomics/homo_sapiens/illumina/bam/test.paired_end.sorted.bam.bai to work dir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work/stage-1e8d6f43-c608-4fe9-9d21-a87e0effa236/00/4efc5f1e3ffec940c23b8c47e0cbd4/test.paired_end.sorted.bam.bai
+Oct-04 01:21:47.077 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test); status: COMPLETED; exit: 127; error: -; workDir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work/e0/cc5143decec57fb21d37c26710cb27]
+Oct-04 01:21:47.080 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test); work-dir=/ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work/e0/cc5143decec57fb21d37c26710cb27
+  error [nextflow.exception.ProcessFailedException]: Process `NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test)` terminated with an error exit status (127)
+Oct-04 01:21:47.093 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test)'
+
+Caused by:
+  Process `NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test)` terminated with an error exit status (127)
+
+Command executed:
+
+  printf "%s %s\n" test.paired_end.sorted.bam test.pre_conversion.bam | while read old_name new_name; do
+      [ -f "${new_name}" ] || ln -s $old_name $new_name
+  done
+  fastqc --quiet --threads 2 test.pre_conversion.bam
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION":
+      fastqc: $( fastqc --version | sed -e "s/FastQC v//g" )
+  END_VERSIONS
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 5: fastqc: command not found
+
+Work dir:
+  /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work/e0/cc5143decec57fb21d37c26710cb27
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Oct-04 01:21:47.106 [Task monitor] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Oct-04 01:21:47.108 [FileTransfer-3] DEBUG nextflow.file.FilePorter - Copying foreign file https://github.com/nf-core/test-datasets/raw/bamtofastq/test-datasets/data/genomics/homo_sapiens/illumina/bam/test2.paired_end.sorted.bam to work dir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work/stage-1e8d6f43-c608-4fe9-9d21-a87e0effa236/60/7d76bd7ef7cb038e7e2dc9e5c36591/test2.paired_end.sorted.bam
+Oct-04 01:21:47.109 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-04 01:21:47.110 [Actor Thread 17] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BAMTOFASTQ:BAMTOFASTQ:CHECK_IF_PAIRED_END; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-04 01:21:47.110 [Actor Thread 18] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:SAMTOOLS_VIEW_MAP_UNMAP; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-04 01:21:47.110 [Actor Thread 14] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_FLAGSTAT; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-04 01:21:47.111 [Actor Thread 12] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_STATS; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-04 01:21:47.111 [Actor Thread 18] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BAMTOFASTQ:BAMTOFASTQ:ALIGNMENT_TO_FASTQ:COLLATE_FASTQ_UNMAP; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-04 01:21:47.110 [Actor Thread 9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-04 01:21:47.110 [Actor Thread 13] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:SAMTOOLS_IDXSTATS; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-04 01:21:47.112 [Actor Thread 21] DEBUG nextflow.file.SortFileCollector - FileCollector temp dir not removed: null
+Oct-04 01:21:47.113 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-04 01:21:47.114 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/bamtofastq][0;31m Pipeline completed with errors[0m-
+Oct-04 01:21:47.117 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=692ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=2; peakMemory=6 GB; ]
+Oct-04 01:21:47.117 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Oct-04 01:21:47.119 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Oct-04 01:21:47.138 [main] DEBUG nextflow.trace.ReportObserver - Execution report summary data:
+  [{"cpuUsage":null,"process":"FASTQC_PRE_CONVERSION","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":{"mean":346,"min":346,"q1":346,"q2":346,"q3":346,"max":346,"minLabel":"NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test)","maxLabel":"NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test)","q1Label":"NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test)","q2Label":"NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test)","q3Label":"NFCORE_BAMTOFASTQ:BAMTOFASTQ:PRE_CONVERSION_QC:FASTQC_PRE_CONVERSION (test)"},"writes":null}]
+Oct-04 01:21:47.265 [FileTransfer-4] DEBUG nextflow.file.FilePorter - Copying foreign file https://github.com/nf-core/test-datasets/raw/bamtofastq/test-datasets/data/genomics/homo_sapiens/illumina/bam/test2.paired_end.sorted.bam.bai to work dir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/bamtofasta/work/stage-1e8d6f43-c608-4fe9-9d21-a87e0effa236/06/575781733fb04c339414fe69ff7977/test2.paired_end.sorted.bam.bai
+Oct-04 01:21:47.585 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Oct-04 01:21:47.741 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-04 01:21:47.753 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Oct-04 01:21:47.754 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

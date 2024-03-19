@@ -1,0 +1,164 @@
+Oct-04 00:15:40.706 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/rnafusion -r 2.1.0 -profile test --outdir results
+Oct-04 00:15:40.834 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.4
+Oct-04 00:15:40.876 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/jet/home/icaoberg/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3-patch1,nf-tower@1.5.12,nf-wave@0.8.4
+Oct-04 00:15:40.900 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-04 00:15:40.901 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-04 00:15:40.904 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-04 00:15:40.928 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-04 00:15:40.953 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /jet/home/icaoberg/.nextflow/scm
+Oct-04 00:15:43.023 [main] DEBUG nextflow.scm.AssetManager - Git config: /jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/rnafusion.git
+Oct-04 00:15:43.068 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Oct-04 00:15:43.075 [main] DEBUG nextflow.scm.AssetManager - Git config: /jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/rnafusion.git
+Oct-04 00:15:44.320 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/nextflow.config
+Oct-04 00:15:44.322 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/nextflow.config
+Oct-04 00:15:44.331 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
+Oct-04 00:15:46.328 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [cfc_dev, ifb_core, denbi_qbic, alice, mjolnir_globe, uppmax, test_full_build, incliva, uge, rosalind_uge, lugh, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, tigem, tubingen_apg, google, apollo, ipop_up, googlels, eddie, medair, biowulf, bi, bigpurple, adcra, cedars, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, munin, rosalind, hasta, cfc, uzh, ebi_codon_slurm, ebc, ku_sund_dangpu, ccga_dx, crick, marvin, biohpc_gen, shifter, mana, unc_lccc, wehi, awsbatch, wustl_htcf, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, sage, cambridge, podman, ebi_codon, cheaha, xanadu, test, computerome, ucd_sonic, seg_globe, sanger, dkfz, pasteur, ethz_euler, test_full, tuos_stanage, azurebatch, hki, crukmi, docker, engaging, gis, hypatia, psmn, eva, fgcz, conda, crg, singularity, uw_hyak_pedslabs, prince, utd_sysbio, debug, genouest, cbe, phoenix, seawulf, fub_curta, uct_hpc, aws_tower, binac]
+Oct-04 00:15:46.412 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Oct-04 00:15:46.412 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/nf-core/rnafusion` [grave_lagrange] DSL2 - revision: 6ffe30435b [2.1.0]
+Oct-04 00:15:46.413 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-04 00:15:46.413 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-04 00:15:46.415 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /jet/home/icaoberg/.nextflow/secrets/store.json
+Oct-04 00:15:46.418 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7b377a53] - activable => nextflow.secret.LocalSecretsProvider@7b377a53
+Oct-04 00:15:46.533 [main] DEBUG nextflow.Session - Session UUID: 763f301d-9c72-454e-9a2a-540e9cc7d5b1
+Oct-04 00:15:46.533 [main] DEBUG nextflow.Session - Run name: grave_lagrange
+Oct-04 00:15:46.534 [main] DEBUG nextflow.Session - Executor pool size: 2
+Oct-04 00:15:46.542 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=10; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-04 00:15:46.590 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.4 build 5881
+  Created: 25-09-2023 15:34 UTC (11:34 EDT)
+  System: Linux 4.18.0-193.28.1.el8_2.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 17.0.6+10-LTS
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 54573@r021.ib.bridges2.psc.edu [10.8.9.21]
+  CPUs: 1 - Mem: 2 GB (1.7 GB) - Swap: 0 (0)
+Oct-04 00:15:46.647 [main] DEBUG nextflow.Session - Work-dir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/rnafusion/work [lustre]
+Oct-04 00:15:46.661 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-04 00:15:46.701 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-04 00:15:46.895 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-04 00:15:46.910 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 2; maxThreads: 1000
+Oct-04 00:15:47.184 [main] DEBUG nextflow.Session - Session start
+Oct-04 00:15:47.188 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/rnafusion/results/pipeline_info/execution_trace_2023-10-04_00-15-45.txt
+Oct-04 00:15:47.248 [main] DEBUG nextflow.Session - Using default localLib path: /jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/lib
+Oct-04 00:15:47.252 [main] DEBUG nextflow.Session - Adding to the classpath library: /jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/lib
+Oct-04 00:15:47.252 [main] DEBUG nextflow.Session - Adding to the classpath library: /jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/lib/nfcore_external_java_deps.jar
+Oct-04 00:15:49.603 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-04 00:15:49.933 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/rnafusion v2.1.0[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision                          : [0;32m2.1.0[0m
+  [0;34mrunName                           : [0;32mgrave_lagrange[0m
+  [0;34mlaunchDir                         : [0;32m/ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/rnafusion[0m
+  [0;34mworkDir                           : [0;32m/ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/rnafusion/work[0m
+  [0;34mprojectDir                        : [0;32m/jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion[0m
+  [0;34muserName                          : [0;32micaoberg[0m
+  [0;34mprofile                           : [0;32mtest[0m
+  [0;34mconfigFiles                       : [0;32m/jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/nextflow.config[0m
+
+[1mInput/output options[0m
+  [0;34minput                             : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/rnafusion/testdata/human/samplesheet_valid.csv[0m
+  [0;34moutdir                            : [0;32mresults[0m
+  [0;34mgenomes_base                      : [0;32mresults/references[0m
+  [0;34mensembl_version                   : [0;32m102[0m
+  [0;34mstarfusion_build                  : [0;32mtrue[0m
+  [0;34marriba_ref                        : [0;32m/usr/local/var/lib/arriba[0m
+  [0;34marriba_ref_blacklist              : [0;32m/usr/local/var/lib/arriba/blacklist_hg38_GRCh38_v2.3.0.tsv.gz[0m
+  [0;34marriba_ref_protein_domain         : [0;32m/usr/local/var/lib/arriba/protein_domains_hg38_GRCh38_v2.3.0.gff3[0m
+  [0;34mensembl_ref                       : [0;32mresults/references/ensembl[0m
+  [0;34mfusioncatcher_limitSjdbInsertNsj  : [0;32m2000000[0m
+  [0;34mfusioncatcher_ref                 : [0;32mresults/references/fusioncatcher/human_v102[0m
+  [0;34mfusioninspector_limitSjdbInsertNsj: [0;32m1000000[0m
+  [0;34mfusionreport_ref                  : [0;32mresults/references/fusion_report_db[0m
+  [0;34mpizzly_ref                        : [0;32mresults/references/pizzly/kallisto[0m
+  [0;34msquid_ref                         : [0;32mresults/references/squid[0m
+  [0;34mstarfusion_ref                    : [0;32mresults/references/starfusion/ctat_genome_lib_build_dir[0m
+  [0;34mstarindex_ref                     : [0;32mresults/references/star[0m
+
+[1mReference genome options[0m
+  [0;34mgenome                            : [0;32mGRCh38[0m
+  [0;34mfasta                             : [0;32mresults/references/ensembl/Homo_sapiens.GRCh38.102.all.fa[0m
+  [0;34mgtf                               : [0;32mresults/references/ensembl/Homo_sapiens.GRCh38.102.gtf[0m
+  [0;34mchrgtf                            : [0;32mresults/references/ensembl/Homo_sapiens.GRCh38.102.chr.gtf[0m
+  [0;34mtranscript                        : [0;32mresults/references/ensembl/Homo_sapiens.GRCh38.102.cdna.all.fa.gz[0m
+  [0;34mrefflat                           : [0;32mresults/references/ensembl/Homo_sapiens.GRCh38.102.chr.gtf.refflat[0m
+
+[1mInstitutional config options[0m
+  [0;34mconfig_profile_name               : [0;32mTest profile[0m
+  [0;34mconfig_profile_description        : [0;32mMinimal test dataset to check pipeline function[0m
+
+[1mMax job request options[0m
+  [0;34mmax_cpus                          : [0;32m2[0m
+  [0;34mmax_memory                        : [0;32m6 GB[0m
+  [0;34mmax_time                          : [0;32m6h[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use nf-core/rnafusion for your analysis please cite:
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.151721952
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/rnafusion/blob/master/CITATIONS.md
+-[2m----------------------------------------------------[0m-
+Oct-04 00:15:52.223 [main] ERROR nextflow.cli.Launcher - Unable to read script: '/jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/./workflows/rnafusion.nf' -- cause: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/rnafusion/results/references/ensembl/Homo_sapiens.GRCh38.102.all.fa
+nextflow.exception.ScriptCompilationException: Unable to read script: '/jet/home/icaoberg/.nextflow/assets/nf-core/rnafusion/./workflows/rnafusion.nf' -- cause: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/rnafusion/results/references/ensembl/Homo_sapiens.GRCh38.102.all.fa
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:208)
+	at nextflow.script.IncludeDef.memoizedMethodPriv$loadModule0PathMapSession(IncludeDef.groovy:151)
+	at nextflow.script.IncludeDef.access$0(IncludeDef.groovy)
+	at nextflow.script.IncludeDef$__clinit__closure2.doCall(IncludeDef.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:274)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1035)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.lambda$call$0(Memoize.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:137)
+	at org.codehaus.groovy.runtime.memoize.ConcurrentCommonCache.getAndPut(ConcurrentCommonCache.java:113)
+	at org.codehaus.groovy.runtime.memoize.Memoize$MemoizeFunction.call(Memoize.java:136)
+	at nextflow.script.IncludeDef.loadModule0(IncludeDef.groovy)
+	at nextflow.script.IncludeDef.load0(IncludeDef.groovy:123)
+	at nextflow.script.IncludeDef$load0$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+	at Script_70657a1a.runScript(Script_70657a1a:48)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:145)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:192)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:229)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:224)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:130)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:368)
+	at nextflow.cli.Launcher.run(Launcher.groovy:494)
+	at nextflow.cli.Launcher.main(Launcher.groovy:665)
+Caused by: java.nio.file.NoSuchFileException: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/nfcore/rnafusion/results/references/ensembl/Homo_sapiens.GRCh38.102.all.fa
+	at nextflow.file.FileHelper.checkIfExists(FileHelper.groovy:1068)
+	at nextflow.file.FileHelper$checkIfExists$1.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at nextflow.file.FileHelper$checkIfExists$1.call(Unknown Source)
+	at nextflow.Nextflow.file(Nextflow.groovy:112)
+	at nextflow.Nextflow$file$0.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:217)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:240)
+	at Script_1806992b.runScript(Script_1806992b:31)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:145)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:192)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:229)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:215)
+	at nextflow.script.ScriptParser.runScript(ScriptParser.groovy:205)
+	... 31 common frames omitted

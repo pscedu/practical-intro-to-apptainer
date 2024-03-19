@@ -1,0 +1,601 @@
+Oct-03 22:32:20.702 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/atacseq -r 2.1.2 -profile test --outdir ./results -c psc.config
+Oct-03 22:32:20.762 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.4
+Oct-03 22:32:20.784 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/jet/home/icaoberg/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3-patch1,nf-tower@1.5.12,nf-wave@0.8.4
+Oct-03 22:32:20.795 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-03 22:32:20.796 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-03 22:32:20.799 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-03 22:32:20.809 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-03 22:32:20.824 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /jet/home/icaoberg/.nextflow/scm
+Oct-03 22:32:20.848 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Oct-03 22:32:20.855 [main] INFO  nextflow.cli.CmdRun - Pulling nf-core/atacseq ...
+Oct-03 22:32:20.856 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/nf-core/atacseq/contents/nextflow.config?ref=2.1.2
+Oct-03 22:32:22.308 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/nf-core/atacseq/contents/main.nf?ref=2.1.2
+Oct-03 22:32:22.380 [main] DEBUG nextflow.scm.RepositoryProvider - Request [credentials -:-] -> https://api.github.com/repos/nf-core/atacseq
+Oct-03 22:32:22.476 [main] DEBUG nextflow.scm.AssetManager - Pulling nf-core/atacseq -- Using remote clone url: https://github.com/nf-core/atacseq.git
+Oct-03 22:32:25.107 [main] INFO  nextflow.cli.CmdRun -  downloaded from https://github.com/nf-core/atacseq.git
+Oct-03 22:32:25.142 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/nextflow.config
+Oct-03 22:32:25.144 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/psc.config
+Oct-03 22:32:25.144 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/nextflow.config
+Oct-03 22:32:25.144 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/psc.config
+Oct-03 22:32:25.153 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
+Oct-03 22:32:26.629 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
+Oct-03 22:32:26.643 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [cfc_dev, ifb_core, denbi_qbic, alice, mjolnir_globe, uppmax, incliva, uge, rosalind_uge, lugh, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, tigem, tubingen_apg, google, apollo, ipop_up, googlels, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, munin, arm, rosalind, hasta, cfc, uzh, ebi_codon_slurm, ebc, ku_sund_dangpu, ccga_dx, crick, marvin, biohpc_gen, shifter, mana, mamba, unc_lccc, wehi, awsbatch, wustl_htcf, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, sage, cambridge, podman, ebi_codon, cheaha, xanadu, test, computerome, ucd_sonic, seg_globe, sanger, dkfz, pasteur, ethz_euler, test_full, tuos_stanage, azurebatch, hki, crukmi, docker, engaging, gis, hypatia, psmn, test_controls, eva, fgcz, conda, crg, singularity, uw_hyak_pedslabs, prince, utd_sysbio, debug, genouest, cbe, phoenix, gitpod, seawulf, fub_curta, uct_hpc, aws_tower, binac]
+Oct-03 22:32:26.687 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Oct-03 22:32:26.688 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/nf-core/atacseq` [naughty_hilbert] DSL2 - revision: 1a1dbe52ff [2.1.2]
+Oct-03 22:32:26.688 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation]
+Oct-03 22:32:26.689 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-03 22:32:26.689 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation]
+Oct-03 22:32:26.689 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: latest
+Oct-03 22:32:26.774 [main] INFO  nextflow.plugin.PluginUpdater - Downloading plugin nf-validation@0.3.2
+Oct-03 22:32:27.098 [main] INFO  org.pf4j.util.FileUtils - Expanded plugin zip 'nf-validation-0.3.2.zip' in 'nf-validation-0.3.2'
+Oct-03 22:32:27.100 [main] DEBUG nextflow.plugin.PluginUpdater - Failed atomic move for plugin /tmp/pf4j-update-downloader17288586076371424469/nf-validation-0.3.2 -> /jet/home/icaoberg/.nextflow/plugins/nf-validation-0.3.2 - Reason: /tmp/pf4j-update-downloader17288586076371424469/nf-validation-0.3.2 -> /jet/home/icaoberg/.nextflow/plugins/nf-validation-0.3.2: Invalid cross-device link - Fallback on safe move
+Oct-03 22:32:27.140 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@0.3.2' resolved
+Oct-03 22:32:27.141 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@0.3.2'
+Oct-03 22:32:27.148 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@0.3.2
+Oct-03 22:32:27.154 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /jet/home/icaoberg/.nextflow/secrets/store.json
+Oct-03 22:32:27.158 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@3a3316b6] - activable => nextflow.secret.LocalSecretsProvider@3a3316b6
+Oct-03 22:32:27.216 [main] DEBUG nextflow.Session - Session UUID: af37c1a4-4c02-4b8c-b5a7-26be32deec16
+Oct-03 22:32:27.216 [main] DEBUG nextflow.Session - Run name: naughty_hilbert
+Oct-03 22:32:27.217 [main] DEBUG nextflow.Session - Executor pool size: 10
+Oct-03 22:32:27.226 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-03 22:32:27.248 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.4 build 5881
+  Created: 25-09-2023 15:34 UTC (11:34 EDT)
+  System: Linux 4.18.0-193.28.1.el8_2.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 17.0.6+10-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 77230@r007.ib.bridges2.psc.edu [10.8.9.7]
+  CPUs: 10 - Mem: 19.5 GB (18.9 GB) - Swap: 0 (0)
+Oct-03 22:32:27.269 [main] DEBUG nextflow.Session - Work-dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work [lustre]
+Oct-03 22:32:27.283 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-03 22:32:27.291 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-03 22:32:27.394 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-03 22:32:27.404 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Oct-03 22:32:27.500 [main] DEBUG nextflow.Session - Session start
+Oct-03 22:32:27.503 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/results/pipeline_info/execution_trace_2023-10-03_22-32-26.txt
+Oct-03 22:32:27.515 [main] DEBUG nextflow.Session - Using default localLib path: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/lib
+Oct-03 22:32:27.518 [main] DEBUG nextflow.Session - Adding to the classpath library: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/lib
+Oct-03 22:32:27.519 [main] DEBUG nextflow.Session - Adding to the classpath library: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/lib/nfcore_external_java_deps.jar
+Oct-03 22:32:28.067 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-03 22:32:28.083 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters, paramsHelp:paramsHelp]; plugin Id: nf-validation
+Oct-03 22:32:28.100 [main] DEBUG nextflow.validation.SchemaValidator - Starting parameters validation
+Oct-03 22:32:28.961 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-amazon version: 1.16.2
+Oct-03 22:32:28.962 [main] INFO  nextflow.plugin.PluginUpdater - Downloading plugin nf-amazon@1.16.2
+Oct-03 22:32:29.532 [main] INFO  org.pf4j.util.FileUtils - Expanded plugin zip 'nf-amazon-1.16.2.zip' in 'nf-amazon-1.16.2'
+Oct-03 22:32:29.532 [main] DEBUG nextflow.plugin.PluginUpdater - Failed atomic move for plugin /tmp/pf4j-update-downloader4224865799979716525/nf-amazon-1.16.2 -> /jet/home/icaoberg/.nextflow/plugins/nf-amazon-1.16.2 - Reason: /tmp/pf4j-update-downloader4224865799979716525/nf-amazon-1.16.2 -> /jet/home/icaoberg/.nextflow/plugins/nf-amazon-1.16.2: Invalid cross-device link - Fallback on safe move
+Oct-03 22:32:29.651 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@1.16.2' resolved
+Oct-03 22:32:29.651 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-amazon@1.16.2'
+Oct-03 22:32:29.665 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-amazon@1.16.2
+Oct-03 22:32:29.685 [main] DEBUG nextflow.file.FileHelper - > Added 'S3FileSystemProvider' to list of installed providers [s3]
+Oct-03 22:32:29.685 [main] DEBUG nextflow.file.FileHelper - Started plugin 'nf-amazon' required to handle file: s3://ngi-igenomes/igenomes
+Oct-03 22:32:29.696 [main] DEBUG nextflow.file.FileHelper - Creating a file system instance for provider: S3FileSystemProvider
+Oct-03 22:32:29.705 [main] DEBUG nextflow.file.FileHelper - AWS S3 config details: {max_error_retry=5}
+Oct-03 22:32:30.119 [main] DEBUG com.upplication.s3fs.AmazonS3Client - Setting S3 glacierRetrievalTier=null
+Oct-03 22:32:44.607 [main] DEBUG nextflow.validation.SchemaValidator - Finishing parameters validation
+Oct-03 22:32:45.858 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog, paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-validation
+Oct-03 22:32:45.869 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/atacseq v2.1.2-g1a1dbe5[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision                  : [0;32m2.1.2[0m
+  [0;34mrunName                   : [0;32mnaughty_hilbert[0m
+  [0;34mcontainerEngine           : [0;32msingularity[0m
+  [0;34mlaunchDir                 : [0;32m/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq[0m
+  [0;34mworkDir                   : [0;32m/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work[0m
+  [0;34mprojectDir                : [0;32m/jet/home/icaoberg/.nextflow/assets/nf-core/atacseq[0m
+  [0;34muserName                  : [0;32micaoberg[0m
+  [0;34mprofile                   : [0;32mtest[0m
+  [0;34mconfigFiles               : [0;32m[0m
+
+[1mInput/output options[0m
+  [0;34minput                     : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/atacseq/samplesheet/v2.0/samplesheet_test.csv[0m
+  [0;34mread_length               : [0;32m50[0m
+  [0;34moutdir                    : [0;32m./results[0m
+
+[1mReference genome options[0m
+  [0;34mfasta                     : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genome.fa[0m
+  [0;34mgtf                       : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genes.gtf[0m
+  [0;34mmito_name                 : [0;32mMT[0m
+
+[1mInstitutional config options[0m
+  [0;34mconfig_profile_name       : [0;32mTest profile[0m
+  [0;34mconfig_profile_description: [0;32mMinimal test dataset to check pipeline function[0m
+
+[1mMax job request options[0m
+  [0;34mmax_cpus                  : [0;32m2[0m
+  [0;34mmax_memory                : [0;32m6.GB[0m
+  [0;34mmax_time                  : [0;32m6.h[0m
+
+[1mGeneric options[0m
+  [0;34mfingerprint_bins          : [0;32m100[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use nf-core/atacseq for your analysis please cite:
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.2634132
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/atacseq/blob/master/CITATIONS.md
+
+Oct-03 22:32:45.872 [main] WARN  nextflow.Nextflow - =============================================================================
+  --macs_gsize parameter has not been provided.
+  It will be auto-calculated by 'khmer unique-kmers.py' using the '--read_length' parameter.
+  Explicitly provide '--macs_gsize macs2_genome_size' to change this behaviour.
+===================================================================================
+Oct-03 22:32:52.750 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED
+Oct-03 22:32:52.751 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GTF2BED` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED
+Oct-03 22:32:52.757 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.757 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.767 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Oct-03 22:32:52.770 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Oct-03 22:32:52.773 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Oct-03 22:32:52.843 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:TSS_EXTRACT` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT
+Oct-03 22:32:52.846 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.846 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.875 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES
+Oct-03 22:32:52.876 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CUSTOM_GETCHROMSIZES` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES
+Oct-03 22:32:52.879 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.880 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.893 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GET_AUTOSOMES` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES
+Oct-03 22:32:52.895 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.895 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.903 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GENOME_BLACKLIST_REGIONS` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS
+Oct-03 22:32:52.906 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.906 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.914 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX
+Oct-03 22:32:52.915 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWA_INDEX|BOWTIE2_BUILD|STAR_GENOMEGENERATE|CHROMAP_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX
+Oct-03 22:32:52.916 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.916 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.923 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS
+Oct-03 22:32:52.924 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:KHMER_UNIQUEKMERS` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS
+Oct-03 22:32:52.926 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.926 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.935 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK
+Oct-03 22:32:52.935 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMPLESHEET_CHECK` matches process NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK
+Oct-03 22:32:52.938 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.938 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.961 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC
+Oct-03 22:32:52.961 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTQC` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC
+Oct-03 22:32:52.963 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.964 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.976 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE
+Oct-03 22:32:52.976 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:TRIMGALORE` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE
+Oct-03 22:32:52.978 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:52.978 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:52.997 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM
+Oct-03 22:32:52.998 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWA_MEM` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM
+Oct-03 22:32:53.000 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.000 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.007 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:32:53.009 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:32:53.010 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.010 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.017 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:32:53.019 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:32:53.020 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.020 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.029 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.030 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.032 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.032 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.037 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.039 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.040 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.040 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.045 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.046 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.048 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.048 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.063 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY
+Oct-03 22:32:53.064 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PICARD_MERGESAMFILES_LIBRARY` matches process NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY
+Oct-03 22:32:53.066 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.066 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.074 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:32:53.075 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:32:53.077 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.077 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.083 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:32:53.083 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:32:53.084 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.084 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.092 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.093 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.094 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.094 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.098 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.099 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.100 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.100 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.104 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.104 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.105 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.105 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.113 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER
+Oct-03 22:32:53.113 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BAMTOOLS_FILTER` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER
+Oct-03 22:32:53.114 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.114 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.124 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX
+Oct-03 22:32:53.125 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX
+Oct-03 22:32:53.126 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.126 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.132 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.132 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.133 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.133 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.137 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.137 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.138 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.138 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.142 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.143 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.144 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.144 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.149 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT
+Oct-03 22:32:53.150 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT
+Oct-03 22:32:53.151 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.151 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.155 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS
+Oct-03 22:32:53.155 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BAM_REMOVE_ORPHANS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS
+Oct-03 22:32:53.156 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.156 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.161 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:32:53.161 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:32:53.162 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:32:53.162 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.162 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.166 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:32:53.167 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:32:53.167 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:32:53.167 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.167 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.175 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.175 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.175 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.175 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.176 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.176 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.180 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.180 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.180 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.180 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.181 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.181 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.185 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.185 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.185 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.185 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.186 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.186 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.198 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS
+Oct-03 22:32:53.198 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS
+Oct-03 22:32:53.199 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.199 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.208 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:32:53.209 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:32:53.210 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.210 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.215 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:32:53.216 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:32:53.216 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.216 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.222 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS
+Oct-03 22:32:53.222 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS
+Oct-03 22:32:53.223 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.223 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.226 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT
+Oct-03 22:32:53.227 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT
+Oct-03 22:32:53.228 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.228 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.232 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE
+Oct-03 22:32:53.232 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DEEPTOOLS_PLOTPROFILE` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE
+Oct-03 22:32:53.233 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.233 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.238 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP
+Oct-03 22:32:53.239 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DEEPTOOLS_PLOTHEATMAP` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP
+Oct-03 22:32:53.239 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.239 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.246 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT
+Oct-03 22:32:53.247 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT
+Oct-03 22:32:53.248 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.248 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.257 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:32:53.258 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:32:53.258 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.258 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.266 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:32:53.267 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:32:53.267 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.267 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.273 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+Oct-03 22:32:53.274 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.274 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.280 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.281 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.282 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.282 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.291 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:32:53.291 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:32:53.292 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.292 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.297 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.297 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.298 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.298 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.309 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_long` matches labels `process_long` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:32:53.309 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:32:53.310 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.310 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.316 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.316 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.317 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.317 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.329 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:32:53.330 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:32:53.331 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.331 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.337 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:32:53.338 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:32:53.338 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.338 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.348 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV
+Oct-03 22:32:53.349 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGED_LIBRARY_ATAQV_ATAQV` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV
+Oct-03 22:32:53.350 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.350 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.356 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV
+Oct-03 22:32:53.357 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGED_LIBRARY_ATAQV_MKARV` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV
+Oct-03 22:32:53.357 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.357 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.365 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE
+Oct-03 22:32:53.366 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PICARD_MERGESAMFILES_REPLICATE` matches process NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE
+Oct-03 22:32:53.366 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.366 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.371 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:32:53.372 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:32:53.372 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.372 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.376 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:32:53.376 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:32:53.377 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.377 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.382 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.383 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.383 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.383 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.386 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.386 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.387 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.387 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.389 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.390 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.390 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.390 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.395 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:32:53.395 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:32:53.396 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.396 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.399 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:32:53.400 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:32:53.400 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.400 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.406 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:32:53.407 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:32:53.407 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.407 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.414 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:32:53.414 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:32:53.415 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.415 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.419 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+Oct-03 22:32:53.420 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.420 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.425 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.425 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.426 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.426 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.429 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:32:53.430 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:32:53.430 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.430 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.433 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.433 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.434 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.434 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.440 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_long` matches labels `process_long` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:32:53.440 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:32:53.441 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.441 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.444 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.445 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.445 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.445 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.452 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:32:53.453 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:32:53.453 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.453 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.458 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:32:53.458 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:32:53.458 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.459 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.475 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:IGV` matches process NFCORE_ATACSEQ:ATACSEQ:IGV
+Oct-03 22:32:53.476 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.476 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.500 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Oct-03 22:32:53.501 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CUSTOM_DUMPSOFTWAREVERSIONS` matches process NFCORE_ATACSEQ:ATACSEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Oct-03 22:32:53.501 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.501 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.564 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MULTIQC
+Oct-03 22:32:53.564 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MULTIQC` matches process NFCORE_ATACSEQ:ATACSEQ:MULTIQC
+Oct-03 22:32:53.565 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:32:53.565 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:32:53.579 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX, PICARD_MERGESAMFILES_REPLICATE, PLOT_MACS2_QC, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC, GFFREAD, BWA_MEM, BAM_REMOVE_ORPHANS, GUNZIP, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP, SAMTOOLS_STATS, ATAQV_ATAQV, GUNZIP_GFF, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS, ATAQV_MKARV, PICARD_MERGESAMFILES, TRIMGALORE, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS, BEDTOOLS_GENOMECOV, NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT, CHROMAP_CHROMAP, MERGED_LIBRARY_PRESEQ_LCEXTRAP, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS, BOWTIE2_ALIGN, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS, MACS2_CONSENSUS, SAMTOOLS_INDEX, PRESEQ_LCEXTRAP, FASTQC, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM, DEEPTOOLS_PLOTFINGERPRINT, UCSC_BEDGRAPHTOBIGWIG, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC, MULTIQC, GTF2BED, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, TSS_EXTRACT, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS, GUNZIP_GTF, UNTAR_BOWTIE2_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, UMITOOLS_EXTRACT, BAMTOOLS_FILTER, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV, GENOME_BLACKLIST_REGIONS, SAMTOOLS_FLAGSTAT, SAMPLESHEET_CHECK, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, GUNZIP_FASTA, DEEPTOOLS_COMPUTEMATRIX, MACS2_CALLPEAK, MERGED_LIBRARY_ATAQV_MKARV, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV, DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS, DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG, GET_AUTOSOMES, DEEPTOOLS_PLOTPROFILE, HOMER_ANNOTATEPEAKS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, NFCORE_ATACSEQ:ATACSEQ:CUSTOM_DUMPSOFTWAREVERSIONS, KHMER_UNIQUEKMERS, NFCORE_ATACSEQ:ATACSEQ:IGV, DESEQ2_QC, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS, PICARD_MARKDUPLICATES, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT, UNTAR_CHROMAP_INDEX, UNTAR, PICARD_MERGESAMFILES_LIBRARY, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS, DEEPTOOLS_PLOTHEATMAP, GUNZIP_TSS_BED, NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT, NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS, NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, STAR_ALIGN, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES, GUNZIP_BLACKLIST, PICARD_COLLECTMULTIPLEMETRICS, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, BOWTIE2_BUILD, NFCORE_ATACSEQ:ATACSEQ:MULTIQC, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG, CUSTOM_GETCHROMSIZES, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, SAMTOOLS_SORT, FRIP_SCORE, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS, SUBREAD_FEATURECOUNTS, MULTIQC_CUSTOM_PEAKS, GUNZIP_GENE_BED, UNTAR_STAR_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS, BWA_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE, UNTAR_BWA_INDEX, PLOT_HOMER_ANNOTATEPEAKS, CHROMAP_INDEX, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS, NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC, MERGED_LIBRARY_ATAQV_ATAQV, SAMTOOLS_IDXSTATS, STAR_GENOMEGENERATE, IGV, CUSTOM_DUMPSOFTWAREVERSIONS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:32:53.589 [main] DEBUG nextflow.Session - Igniting dataflow network (178)
+Oct-03 22:32:53.595 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED
+Oct-03 22:32:53.595 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT
+Oct-03 22:32:53.596 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES
+Oct-03 22:32:53.596 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES
+Oct-03 22:32:53.596 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS
+Oct-03 22:32:53.596 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX
+Oct-03 22:32:53.596 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS
+Oct-03 22:32:53.596 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK
+Oct-03 22:32:53.596 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC
+Oct-03 22:32:53.597 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:32:53.598 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT
+Oct-03 22:32:53.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:32:53.600 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:IGV
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Oct-03 22:32:53.601 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MULTIQC
+Oct-03 22:32:53.601 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-03 22:32:53.601 [main] DEBUG nextflow.Session - Session await
+Oct-03 22:32:53.707 [Actor Thread 10] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.012 s; total time: 0.013 s
+Oct-03 22:32:53.711 [Actor Thread 10] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/collect-file/03c86e6ee8d7515dced3c47144181d57
+Oct-03 22:32:53.720 [Actor Thread 10] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-13257114682746725586
+Oct-03 22:32:53.931 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genes.gtf to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-af37c1a4-4c02-4b8c-b5a7-26be32deec16/96/01fea41c6eff38e5c33edba4c17e5d/genes.gtf
+Oct-03 22:32:53.932 [FileTransfer-2] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genome.fa to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-af37c1a4-4c02-4b8c-b5a7-26be32deec16/a9/0fd62aecab0c2fce845584fe1001bd/genome.fa
+Oct-03 22:32:53.932 [FileTransfer-3] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/samplesheet/v2.0/samplesheet_test.csv to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-af37c1a4-4c02-4b8c-b5a7-26be32deec16/e6/24908c0a3546da83fc899d4c831b4e/samplesheet_test.csv
+Oct-03 22:32:54.064 [Actor Thread 10] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-python-3.8.3.img]
+Oct-03 22:32:54.120 [Actor Thread 9] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/perl:5.26.2 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-perl-5.26.2.img]
+Oct-03 22:32:54.145 [Actor Thread 4] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/bwa:0.7.17--hed695b0_7 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-bwa-0.7.17--hed695b0_7.img]
+Oct-03 22:32:54.145 [Actor Thread 19] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/khmer:3.0.0a3--py37haa7609a_2 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-khmer-3.0.0a3--py37haa7609a_2.img]
+Oct-03 22:32:54.146 [Actor Thread 12] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/samtools:1.16.1--h6899075_1 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-samtools-1.16.1--h6899075_1.img]
+Oct-03 22:32:55.451 [Actor Thread 12] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/samtools:1.16.1--h6899075_1 path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-samtools-1.16.1--h6899075_1.img
+Oct-03 22:32:55.591 [Task submitter] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa); work-dir=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/be/474b5a3803657aad3d29f68bc03f5f
+  error [nextflow.exception.ProcessFailedException]: Error submitting process 'NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)' for execution
+Oct-03 22:32:55.604 [Task submitter] DEBUG nextflow.processor.TaskRun - Unable to dump error of process 'NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)' -- Cause: java.nio.file.NoSuchFileException: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/be/474b5a3803657aad3d29f68bc03f5f/.command.log
+Oct-03 22:32:55.604 [Task submitter] ERROR nextflow.processor.TaskProcessor - Error executing process > 'NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)'
+
+Caused by:
+  Failed to submit process to grid scheduler for execution
+
+Command executed:
+
+  sbatch .command.run
+
+Command exit status:
+  1
+
+Command output:
+  sbatch: error: Allocation requested mem-per-core higher than maximum of 2000M/core
+  sbatch: error: Batch job submission failed: Access/permission denied
+
+Work dir:
+  /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/be/474b5a3803657aad3d29f68bc03f5f
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Oct-03 22:32:55.606 [Task submitter] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Oct-03 22:32:55.614 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-03 22:32:55.615 [Actor Thread 8] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:32:55.615 [Actor Thread 16] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:32:55.615 [Actor Thread 11] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:32:55.615 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-03 22:32:55.615 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:32:55.620 [Actor Thread 15] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:32:55.629 [Actor Thread 24] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:32:55.638 [Actor Thread 41] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:32:55.639 [Actor Thread 14] DEBUG nextflow.file.SortFileCollector - FileCollector temp dir not removed: null
+Oct-03 22:32:55.645 [Actor Thread 20] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:32:55.647 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/atacseq][0;31m Pipeline completed with errors[0m-
+Oct-03 22:32:55.651 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=1; submittedCount=0; runningCount=-1; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=-1; loadMemory=0; peakRunning=0; peakCpus=0; peakMemory=0; ]
+Oct-03 22:32:55.651 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Oct-03 22:32:55.652 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Oct-03 22:32:55.671 [main] DEBUG nextflow.trace.ReportObserver - Execution report summary data:
+  [{"cpuUsage":null,"process":"CUSTOM_GETCHROMSIZES","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":null,"writes":null}]
+Oct-03 22:32:55.833 [Actor Thread 4] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/bwa:0.7.17--hed695b0_7 path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-bwa-0.7.17--hed695b0_7.img
+Oct-03 22:32:56.154 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Oct-03 22:32:56.301 [Actor Thread 9] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/perl:5.26.2 path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-perl-5.26.2.img
+Oct-03 22:32:56.308 [Actor Thread 18] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/bin/gtf2bed
+Oct-03 22:32:56.423 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-03 22:32:56.424 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-amazon@1.16.2'
+Oct-03 22:32:56.424 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-amazon
+Oct-03 22:32:56.424 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-validation@0.3.2'
+Oct-03 22:32:56.424 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-validation
+Oct-03 22:32:56.452 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Oct-03 22:32:56.454 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

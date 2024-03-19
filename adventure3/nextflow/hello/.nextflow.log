@@ -1,0 +1,62 @@
+Oct-04 02:05:13.453 [main] DEBUG nextflow.cli.Launcher - $> nextflow run hello
+Oct-04 02:05:13.511 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.10.6
+Oct-04 02:05:13.535 [main] DEBUG nextflow.scm.AssetManager - Listing projects in folder: /jet/home/icaoberg/.nextflow/assets
+Oct-04 02:05:14.036 [main] DEBUG nextflow.scm.AssetManager - Git config: /jet/home/icaoberg/.nextflow/assets/nextflow-io/hello/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/hello.git
+Oct-04 02:05:14.048 [main] DEBUG nextflow.scm.AssetManager - Git config: /jet/home/icaoberg/.nextflow/assets/nextflow-io/hello/.git/config; branch: master; remote: origin; url: https://github.com/nextflow-io/hello.git
+Oct-04 02:05:14.153 [main] INFO  nextflow.cli.CmdRun - Launching `nextflow-io/hello` [pensive_jepsen] - revision: 4eab81bd42 [master]
+Oct-04 02:05:14.528 [main] INFO  nextflow.scm.AssetManager - NOTE: Your local project version looks outdated - a different revision is available in the remote repository [1d71f857bb]
+Oct-04 02:05:14.540 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /jet/home/icaoberg/.nextflow/assets/nextflow-io/hello/nextflow.config
+Oct-04 02:05:14.542 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /jet/home/icaoberg/.nextflow/assets/nextflow-io/hello/nextflow.config
+Oct-04 02:05:14.549 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-04 02:05:14.592 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; plugins-dir=/jet/home/icaoberg/.nextflow/plugins
+Oct-04 02:05:14.594 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-04 02:05:14.605 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-04 02:05:14.607 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-04 02:05:14.609 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-04 02:05:14.618 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-04 02:05:14.667 [main] DEBUG nextflow.Session - Session uuid: 3bc4b516-47ad-41e1-8a12-bc22ab933431
+Oct-04 02:05:14.667 [main] DEBUG nextflow.Session - Run name: pensive_jepsen
+Oct-04 02:05:14.668 [main] DEBUG nextflow.Session - Executor pool size: 4
+Oct-04 02:05:14.696 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.10.6 build 5661
+  Created: 21-12-2021 17:01 UTC (12:01 EDT)
+  System: Linux 4.18.0-193.28.1.el8_2.x86_64
+  Runtime: Groovy 3.0.9 on OpenJDK 64-Bit Server VM 17.0.6+10-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 3548400@br011.ib.bridges2.psc.edu [10.8.11.29]
+  CPUs: 4 - Mem: 251.6 GB (13.7 GB) - Swap: 699.5 GB (689.3 GB)
+Oct-04 02:05:14.719 [main] DEBUG nextflow.Session - Work-dir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/hello/work [lustre]
+Oct-04 02:05:14.720 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /jet/home/icaoberg/.nextflow/assets/nextflow-io/hello/bin
+Oct-04 02:05:14.765 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[GoogleLifeSciencesExecutor, AwsBatchExecutor, IgExecutor]
+Oct-04 02:05:14.775 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-04 02:05:14.777 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Oct-04 02:05:14.813 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Oct-04 02:05:14.965 [main] DEBUG nextflow.Session - Session start invoked
+Oct-04 02:05:15.197 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-04 02:05:15.277 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Oct-04 02:05:15.277 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-04 02:05:15.280 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-04 02:05:15.285 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=251.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Oct-04 02:05:15.301 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Oct-04 02:05:15.373 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: sayHello
+Oct-04 02:05:15.374 [main] DEBUG nextflow.Session - Ignite dataflow network (2)
+Oct-04 02:05:15.374 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > sayHello
+Oct-04 02:05:15.375 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Oct-04 02:05:15.375 [main] DEBUG nextflow.Session - Session await
+Oct-04 02:05:15.555 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-04 02:05:15.559 [Task submitter] INFO  nextflow.Session - [28/91b63a] Submitted process > sayHello (4)
+Oct-04 02:05:15.580 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-04 02:05:15.580 [Task submitter] INFO  nextflow.Session - [6c/659e30] Submitted process > sayHello (2)
+Oct-04 02:05:15.587 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-04 02:05:15.588 [Task submitter] INFO  nextflow.Session - [e0/cbe497] Submitted process > sayHello (3)
+Oct-04 02:05:15.594 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Oct-04 02:05:15.594 [Task submitter] INFO  nextflow.Session - [ea/60d7b5] Submitted process > sayHello (1)
+Oct-04 02:05:15.620 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: sayHello (4); status: COMPLETED; exit: 0; error: -; workDir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/hello/work/28/91b63a5c42b52ed9b6857a407a925c]
+Oct-04 02:05:15.627 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: sayHello (2); status: COMPLETED; exit: 0; error: -; workDir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/hello/work/6c/659e300cc35c397bfacf744bdfa93d]
+Oct-04 02:05:15.629 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: sayHello (3); status: COMPLETED; exit: 0; error: -; workDir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/hello/work/e0/cbe497791a27aeb13b4b2746d06617]
+Oct-04 02:05:15.632 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: sayHello (1); status: COMPLETED; exit: 0; error: -; workDir: /ocean/projects/pscstaff/icaoberg/code/workflow-examples/nextflow/hello/work/ea/60d7b5f66ab8f22ce89d1607eed869]
+Oct-04 02:05:15.634 [main] DEBUG nextflow.Session - Session await > all process finished
+Oct-04 02:05:15.717 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-04 02:05:15.722 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=4; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=87ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Oct-04 02:05:15.819 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Oct-04 02:05:15.832 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

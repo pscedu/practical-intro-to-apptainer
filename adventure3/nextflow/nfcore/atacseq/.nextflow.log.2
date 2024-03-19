@@ -1,0 +1,1055 @@
+Oct-03 22:33:23.683 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/atacseq -r 2.1.2 -profile test --outdir ./results -c psc.config
+Oct-03 22:33:23.753 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.4
+Oct-03 22:33:23.771 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/jet/home/icaoberg/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3-patch1,nf-tower@1.5.12,nf-wave@0.8.4
+Oct-03 22:33:23.781 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-03 22:33:23.782 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-03 22:33:23.784 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Oct-03 22:33:23.794 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-03 22:33:23.806 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /jet/home/icaoberg/.nextflow/scm
+Oct-03 22:33:24.829 [main] DEBUG nextflow.scm.AssetManager - Git config: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/atacseq.git
+Oct-03 22:33:24.846 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Oct-03 22:33:24.853 [main] DEBUG nextflow.scm.AssetManager - Git config: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/atacseq.git
+Oct-03 22:33:25.492 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/nextflow.config
+Oct-03 22:33:25.494 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/psc.config
+Oct-03 22:33:25.494 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/nextflow.config
+Oct-03 22:33:25.494 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/psc.config
+Oct-03 22:33:25.505 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
+Oct-03 22:33:27.082 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `test`
+Oct-03 22:33:27.099 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [cfc_dev, ifb_core, denbi_qbic, alice, mjolnir_globe, uppmax, incliva, uge, rosalind_uge, lugh, unibe_ibu, vai, czbiohub_aws, jax, ccga_med, scw, tigem, tubingen_apg, google, apollo, ipop_up, googlels, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, munin, arm, rosalind, hasta, cfc, uzh, ebi_codon_slurm, ebc, ku_sund_dangpu, ccga_dx, crick, marvin, biohpc_gen, shifter, mana, mamba, unc_lccc, wehi, awsbatch, wustl_htcf, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, mpcdf, leicester, vsc_ugent, sage, cambridge, podman, ebi_codon, cheaha, xanadu, test, computerome, ucd_sonic, seg_globe, sanger, dkfz, pasteur, ethz_euler, test_full, tuos_stanage, azurebatch, hki, crukmi, docker, engaging, gis, hypatia, psmn, test_controls, eva, fgcz, conda, crg, singularity, uw_hyak_pedslabs, prince, utd_sysbio, debug, genouest, cbe, phoenix, gitpod, seawulf, fub_curta, uct_hpc, aws_tower, binac]
+Oct-03 22:33:27.144 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Oct-03 22:33:27.145 [main] INFO  nextflow.cli.CmdRun - Launching `https://github.com/nf-core/atacseq` [compassionate_heisenberg] DSL2 - revision: 1a1dbe52ff [2.1.2]
+Oct-03 22:33:27.145 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-validation]
+Oct-03 22:33:27.146 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-03 22:33:27.146 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-validation]
+Oct-03 22:33:27.146 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-validation version: latest
+Oct-03 22:33:27.247 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-validation@0.3.2' resolved
+Oct-03 22:33:27.247 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-validation@0.3.2'
+Oct-03 22:33:27.255 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-validation@0.3.2
+Oct-03 22:33:27.261 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /jet/home/icaoberg/.nextflow/secrets/store.json
+Oct-03 22:33:27.276 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@333a44f2] - activable => nextflow.secret.LocalSecretsProvider@333a44f2
+Oct-03 22:33:27.343 [main] DEBUG nextflow.Session - Session UUID: 12333870-ab6a-47f8-b8ca-b1ff55abd713
+Oct-03 22:33:27.344 [main] DEBUG nextflow.Session - Run name: compassionate_heisenberg
+Oct-03 22:33:27.345 [main] DEBUG nextflow.Session - Executor pool size: 10
+Oct-03 22:33:27.356 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-03 22:33:27.379 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.4 build 5881
+  Created: 25-09-2023 15:34 UTC (11:34 EDT)
+  System: Linux 4.18.0-193.28.1.el8_2.x86_64
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 17.0.6+10-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 77648@r007.ib.bridges2.psc.edu [10.8.9.7]
+  CPUs: 10 - Mem: 19.5 GB (18.3 GB) - Swap: 0 (0)
+Oct-03 22:33:27.393 [main] DEBUG nextflow.Session - Work-dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work [lustre]
+Oct-03 22:33:27.408 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-03 22:33:27.417 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-03 22:33:27.523 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-03 22:33:27.531 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Oct-03 22:33:27.602 [main] DEBUG nextflow.Session - Session start
+Oct-03 22:33:27.607 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/results/pipeline_info/execution_trace_2023-10-03_22-33-26.txt
+Oct-03 22:33:27.617 [main] DEBUG nextflow.Session - Using default localLib path: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/lib
+Oct-03 22:33:27.620 [main] DEBUG nextflow.Session - Adding to the classpath library: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/lib
+Oct-03 22:33:27.621 [main] DEBUG nextflow.Session - Adding to the classpath library: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/lib/nfcore_external_java_deps.jar
+Oct-03 22:33:28.160 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-03 22:33:28.175 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters, paramsHelp:paramsHelp]; plugin Id: nf-validation
+Oct-03 22:33:28.191 [main] DEBUG nextflow.validation.SchemaValidator - Starting parameters validation
+Oct-03 22:33:28.575 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-amazon version: 1.16.2
+Oct-03 22:33:28.580 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@1.16.2' resolved
+Oct-03 22:33:28.581 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-amazon@1.16.2'
+Oct-03 22:33:28.594 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-amazon@1.16.2
+Oct-03 22:33:28.609 [main] DEBUG nextflow.file.FileHelper - > Added 'S3FileSystemProvider' to list of installed providers [s3]
+Oct-03 22:33:28.610 [main] DEBUG nextflow.file.FileHelper - Started plugin 'nf-amazon' required to handle file: s3://ngi-igenomes/igenomes
+Oct-03 22:33:28.619 [main] DEBUG nextflow.file.FileHelper - Creating a file system instance for provider: S3FileSystemProvider
+Oct-03 22:33:28.627 [main] DEBUG nextflow.file.FileHelper - AWS S3 config details: {max_error_retry=5}
+Oct-03 22:33:29.041 [main] DEBUG com.upplication.s3fs.AmazonS3Client - Setting S3 glacierRetrievalTier=null
+Oct-03 22:33:43.023 [main] DEBUG nextflow.validation.SchemaValidator - Finishing parameters validation
+Oct-03 22:33:44.439 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog, paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-validation
+Oct-03 22:33:44.452 [main] INFO  nextflow.Nextflow - 
+
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/atacseq v2.1.2-g1a1dbe5[0m
+-[2m----------------------------------------------------[0m-
+[1mCore Nextflow options[0m
+  [0;34mrevision                  : [0;32m2.1.2[0m
+  [0;34mrunName                   : [0;32mcompassionate_heisenberg[0m
+  [0;34mcontainerEngine           : [0;32msingularity[0m
+  [0;34mlaunchDir                 : [0;32m/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq[0m
+  [0;34mworkDir                   : [0;32m/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work[0m
+  [0;34mprojectDir                : [0;32m/jet/home/icaoberg/.nextflow/assets/nf-core/atacseq[0m
+  [0;34muserName                  : [0;32micaoberg[0m
+  [0;34mprofile                   : [0;32mtest[0m
+  [0;34mconfigFiles               : [0;32m[0m
+
+[1mInput/output options[0m
+  [0;34minput                     : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/atacseq/samplesheet/v2.0/samplesheet_test.csv[0m
+  [0;34mread_length               : [0;32m50[0m
+  [0;34moutdir                    : [0;32m./results[0m
+
+[1mReference genome options[0m
+  [0;34mfasta                     : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genome.fa[0m
+  [0;34mgtf                       : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genes.gtf[0m
+  [0;34mmito_name                 : [0;32mMT[0m
+
+[1mInstitutional config options[0m
+  [0;34mconfig_profile_name       : [0;32mTest profile[0m
+  [0;34mconfig_profile_description: [0;32mMinimal test dataset to check pipeline function[0m
+
+[1mMax job request options[0m
+  [0;34mmax_cpus                  : [0;32m2[0m
+  [0;34mmax_memory                : [0;32m6.GB[0m
+  [0;34mmax_time                  : [0;32m6.h[0m
+
+[1mGeneric options[0m
+  [0;34mfingerprint_bins          : [0;32m100[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+If you use nf-core/atacseq for your analysis please cite:
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.2634132
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/atacseq/blob/master/CITATIONS.md
+
+Oct-03 22:33:44.456 [main] WARN  nextflow.Nextflow - =============================================================================
+  --macs_gsize parameter has not been provided.
+  It will be auto-calculated by 'khmer unique-kmers.py' using the '--read_length' parameter.
+  Explicitly provide '--macs_gsize macs2_genome_size' to change this behaviour.
+===================================================================================
+Oct-03 22:33:51.148 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED
+Oct-03 22:33:51.150 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GTF2BED` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED
+Oct-03 22:33:51.157 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.157 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.167 [main] DEBUG nextflow.executor.Executor - [warm up] executor > slurm
+Oct-03 22:33:51.170 [main] DEBUG n.processor.TaskPollingMonitor - Creating task monitor for executor 'slurm' > capacity: 100; pollInterval: 5s; dumpInterval: 5m 
+Oct-03 22:33:51.173 [main] DEBUG n.executor.AbstractGridExecutor - Creating executor 'slurm' > queue-stat-interval: 1m
+Oct-03 22:33:51.247 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:TSS_EXTRACT` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT
+Oct-03 22:33:51.249 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.249 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.284 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES
+Oct-03 22:33:51.285 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CUSTOM_GETCHROMSIZES` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES
+Oct-03 22:33:51.287 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.287 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.295 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GET_AUTOSOMES` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES
+Oct-03 22:33:51.297 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.297 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.303 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GENOME_BLACKLIST_REGIONS` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS
+Oct-03 22:33:51.305 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.305 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.312 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX
+Oct-03 22:33:51.312 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWA_INDEX|BOWTIE2_BUILD|STAR_GENOMEGENERATE|CHROMAP_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX
+Oct-03 22:33:51.313 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.313 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.319 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS
+Oct-03 22:33:51.319 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:KHMER_UNIQUEKMERS` matches process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS
+Oct-03 22:33:51.321 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.321 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.327 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK
+Oct-03 22:33:51.328 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SAMPLESHEET_CHECK` matches process NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK
+Oct-03 22:33:51.329 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.330 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.348 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC
+Oct-03 22:33:51.349 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTQC` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC
+Oct-03 22:33:51.351 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.351 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.361 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE
+Oct-03 22:33:51.361 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:TRIMGALORE` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE
+Oct-03 22:33:51.363 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.363 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.378 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM
+Oct-03 22:33:51.378 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BWA_MEM` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM
+Oct-03 22:33:51.379 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.380 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.385 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:33:51.386 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:33:51.387 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.387 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.392 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:33:51.393 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:33:51.394 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.394 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.401 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.402 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.403 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.403 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.406 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.407 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.408 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.408 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.411 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.412 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.413 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.413 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.426 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY
+Oct-03 22:33:51.427 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PICARD_MERGESAMFILES_LIBRARY` matches process NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY
+Oct-03 22:33:51.428 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.428 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.435 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:33:51.435 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:33:51.436 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.436 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.441 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:33:51.441 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:33:51.442 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.442 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.450 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.450 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.451 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.451 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.454 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.455 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.456 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.456 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.459 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.460 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.461 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.461 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.467 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER
+Oct-03 22:33:51.467 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BAMTOOLS_FILTER` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER
+Oct-03 22:33:51.468 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.468 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.476 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX
+Oct-03 22:33:51.477 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX
+Oct-03 22:33:51.478 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.478 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.483 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.484 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.484 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.484 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.488 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.488 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.489 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.489 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.492 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.492 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.493 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.493 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.497 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT
+Oct-03 22:33:51.497 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT
+Oct-03 22:33:51.498 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.498 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.501 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS
+Oct-03 22:33:51.501 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:BAM_REMOVE_ORPHANS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS
+Oct-03 22:33:51.502 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.502 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.506 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:33:51.506 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:33:51.507 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:33:51.507 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.507 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.511 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:33:51.511 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:33:51.511 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:33:51.512 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.512 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.518 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.519 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.519 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.519 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.520 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.520 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.523 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.523 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.523 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.523 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.524 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.524 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.527 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.527 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:NFCORE_ATACSEQ:ATACSEQ:.*:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.527 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.527 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.528 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.528 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.538 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS
+Oct-03 22:33:51.538 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS
+Oct-03 22:33:51.539 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.539 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.544 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:33:51.544 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:33:51.545 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.545 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.549 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:33:51.549 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:33:51.550 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.550 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.554 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS
+Oct-03 22:33:51.554 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS
+Oct-03 22:33:51.555 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.555 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.558 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT
+Oct-03 22:33:51.558 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT
+Oct-03 22:33:51.559 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.559 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.562 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE
+Oct-03 22:33:51.562 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DEEPTOOLS_PLOTPROFILE` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE
+Oct-03 22:33:51.563 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.563 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.567 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP
+Oct-03 22:33:51.567 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:DEEPTOOLS_PLOTHEATMAP` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP
+Oct-03 22:33:51.568 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.568 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.573 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT
+Oct-03 22:33:51.573 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT
+Oct-03 22:33:51.574 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.574 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.579 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:33:51.580 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:33:51.580 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.580 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.587 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:33:51.587 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:33:51.588 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.588 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.593 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+Oct-03 22:33:51.593 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.593 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.599 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.599 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.599 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.599 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.606 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:33:51.607 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:33:51.607 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.608 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.611 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.612 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.612 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.612 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.621 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_long` matches labels `process_long` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:33:51.621 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:33:51.622 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.622 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.626 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.627 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.627 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.627 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.638 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:33:51.638 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:33:51.639 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.639 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.645 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:33:51.645 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:33:51.646 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.646 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.653 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV
+Oct-03 22:33:51.654 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGED_LIBRARY_ATAQV_ATAQV` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV
+Oct-03 22:33:51.654 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.654 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.659 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV
+Oct-03 22:33:51.659 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MERGED_LIBRARY_ATAQV_MKARV` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV
+Oct-03 22:33:51.660 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.660 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.667 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE
+Oct-03 22:33:51.668 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:PICARD_MERGESAMFILES_REPLICATE` matches process NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE
+Oct-03 22:33:51.668 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.668 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.672 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:33:51.673 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:33:51.673 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.673 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.677 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:33:51.677 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:33:51.677 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.677 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.683 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.683 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.683 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.683 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.686 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.686 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.686 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.687 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.689 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.689 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:.*` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.689 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.690 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.694 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:33:51.694 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:33:51.695 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.695 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.698 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:33:51.698 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:33:51.698 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.698 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.703 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:33:51.704 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:33:51.704 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.704 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.709 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:33:51.710 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:33:51.710 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.710 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.715 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+Oct-03 22:33:51.715 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.715 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.719 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.720 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.720 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.720 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.723 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:33:51.724 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:33:51.724 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.724 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.727 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.727 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.728 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.728 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.734 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_long` matches labels `process_long` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:33:51.734 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:33:51.734 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.734 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.738 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.738 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.739 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.739 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.745 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:33:51.745 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:33:51.746 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.746 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.750 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:33:51.751 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC` matches process NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:33:51.751 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.751 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.766 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:IGV` matches process NFCORE_ATACSEQ:ATACSEQ:IGV
+Oct-03 22:33:51.767 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.767 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.790 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_ATACSEQ:ATACSEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Oct-03 22:33:51.790 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CUSTOM_DUMPSOFTWAREVERSIONS` matches process NFCORE_ATACSEQ:ATACSEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Oct-03 22:33:51.791 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.791 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.853 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_ATACSEQ:ATACSEQ:MULTIQC
+Oct-03 22:33:51.853 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MULTIQC` matches process NFCORE_ATACSEQ:ATACSEQ:MULTIQC
+Oct-03 22:33:51.854 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: slurm
+Oct-03 22:33:51.854 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'slurm'
+Oct-03 22:33:51.867 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX, PICARD_MERGESAMFILES_REPLICATE, PLOT_MACS2_QC, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC, BWA_MEM, GFFREAD, BAM_REMOVE_ORPHANS, GUNZIP, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP, SAMTOOLS_STATS, ATAQV_ATAQV, GUNZIP_GFF, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS, ATAQV_MKARV, PICARD_MERGESAMFILES, TRIMGALORE, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS, BEDTOOLS_GENOMECOV, NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT, MERGED_LIBRARY_PRESEQ_LCEXTRAP, CHROMAP_CHROMAP, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS, BOWTIE2_ALIGN, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS, MACS2_CONSENSUS, SAMTOOLS_INDEX, PRESEQ_LCEXTRAP, FASTQC, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM, DEEPTOOLS_PLOTFINGERPRINT, UCSC_BEDGRAPHTOBIGWIG, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC, MULTIQC, GTF2BED, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, TSS_EXTRACT, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS, GUNZIP_GTF, UNTAR_BOWTIE2_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, UMITOOLS_EXTRACT, BAMTOOLS_FILTER, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV, GENOME_BLACKLIST_REGIONS, SAMTOOLS_FLAGSTAT, SAMPLESHEET_CHECK, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, GUNZIP_FASTA, DEEPTOOLS_COMPUTEMATRIX, MACS2_CALLPEAK, MERGED_LIBRARY_ATAQV_MKARV, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV, DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS, DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX, NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG, GET_AUTOSOMES, DEEPTOOLS_PLOTPROFILE, HOMER_ANNOTATEPEAKS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, NFCORE_ATACSEQ:ATACSEQ:CUSTOM_DUMPSOFTWAREVERSIONS, KHMER_UNIQUEKMERS, NFCORE_ATACSEQ:ATACSEQ:IGV, DESEQ2_QC, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS, PICARD_MARKDUPLICATES, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT, UNTAR_CHROMAP_INDEX, UNTAR, PICARD_MERGESAMFILES_LIBRARY, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS, DEEPTOOLS_PLOTHEATMAP, GUNZIP_TSS_BED, NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT, NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS, NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, STAR_ALIGN, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES, GUNZIP_BLACKLIST, PICARD_COLLECTMULTIPLEMETRICS, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS, BOWTIE2_BUILD, NFCORE_ATACSEQ:ATACSEQ:MULTIQC, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG, CUSTOM_GETCHROMSIZES, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT, SAMTOOLS_SORT, FRIP_SCORE, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS, SUBREAD_FEATURECOUNTS, MULTIQC_CUSTOM_PEAKS, GUNZIP_GENE_BED, UNTAR_STAR_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS, BWA_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE, UNTAR_BWA_INDEX, PLOT_HOMER_ANNOTATEPEAKS, CHROMAP_INDEX, NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS, NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC, MERGED_LIBRARY_ATAQV_ATAQV, SAMTOOLS_IDXSTATS, IGV, CUSTOM_DUMPSOFTWAREVERSIONS, STAR_GENOMEGENERATE, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE, NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT, NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:33:51.875 [main] DEBUG nextflow.Session - Igniting dataflow network (178)
+Oct-03 22:33:51.879 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED
+Oct-03 22:33:51.880 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT
+Oct-03 22:33:51.880 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES
+Oct-03 22:33:51.880 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES
+Oct-03 22:33:51.881 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS
+Oct-03 22:33:51.881 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX
+Oct-03 22:33:51.881 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS
+Oct-03 22:33:51.881 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK
+Oct-03 22:33:51.881 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC
+Oct-03 22:33:51.881 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE
+Oct-03 22:33:51.881 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM
+Oct-03 22:33:51.882 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:33:51.882 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:33:51.882 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.882 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.882 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.882 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.883 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.884 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.885 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS
+Oct-03 22:33:51.886 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+Oct-03 22:33:51.886 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+Oct-03 22:33:51.886 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC
+Oct-03 22:33:51.886 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:IGV
+Oct-03 22:33:51.886 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+Oct-03 22:33:51.886 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_ATACSEQ:ATACSEQ:MULTIQC
+Oct-03 22:33:51.886 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Oct-03 22:33:51.886 [main] DEBUG nextflow.Session - Session await
+Oct-03 22:33:51.973 [Actor Thread 15] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.002 s; external sort time: 0.012 s; total time: 0.014 s
+Oct-03 22:33:51.978 [Actor Thread 15] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/collect-file/2151f9768f23f59f2370f383bfe9ca89
+Oct-03 22:33:51.984 [Actor Thread 15] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-258821803366271000
+Oct-03 22:33:52.198 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/samplesheet/v2.0/samplesheet_test.csv to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/37/b041bed6e53fe6fc74c211217e9419/samplesheet_test.csv
+Oct-03 22:33:52.198 [FileTransfer-2] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genome.fa to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/f4/d851ef7cf92f239457436a588f090f/genome.fa
+Oct-03 22:33:52.199 [FileTransfer-3] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/reference/genes.gtf to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/ac/abb41bbbfdff62a4f79015ef7ecf34/genes.gtf
+Oct-03 22:33:52.301 [Actor Thread 15] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-python-3.8.3.img]
+Oct-03 22:33:52.524 [Actor Thread 14] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/perl:5.26.2; path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-perl-5.26.2.img
+Oct-03 22:33:52.524 [Actor Thread 4] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/bwa:0.7.17--hed695b0_7; path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-bwa-0.7.17--hed695b0_7.img
+Oct-03 22:33:52.524 [Actor Thread 8] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/samtools:1.16.1--h6899075_1; path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-samtools-1.16.1--h6899075_1.img
+Oct-03 22:33:52.524 [Actor Thread 7] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/khmer:3.0.0a3--py37haa7609a_2 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-khmer-3.0.0a3--py37haa7609a_2.img]
+Oct-03 22:33:52.542 [Actor Thread 19] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/bin/gtf2bed
+Oct-03 22:33:52.567 [Actor Thread 15] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/python:3.8.3 path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-python-3.8.3.img
+Oct-03 22:33:52.572 [Actor Thread 18] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/bin/check_samplesheet.py
+Oct-03 22:33:52.905 [Actor Thread 7] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/khmer:3.0.0a3--py37haa7609a_2 path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-khmer-3.0.0a3--py37haa7609a_2.img
+Oct-03 22:33:54.399 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf) > jobId: 19567923; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/9f/e04d8f17caf3eacfa875cb9adbf9c7
+Oct-03 22:33:54.400 [Task submitter] INFO  nextflow.Session - [9f/e04d8f] Submitted process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)
+Oct-03 22:33:54.431 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa) > jobId: 19567924; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/1b/7c5c0e8386f75a5c8d91682564c37d
+Oct-03 22:33:54.432 [Task submitter] INFO  nextflow.Session - [1b/7c5c0e] Submitted process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)
+Oct-03 22:33:54.448 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa) > jobId: 19567925; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/9f/4cd6d40d2a732f36c8da583b7e243b
+Oct-03 22:33:54.449 [Task submitter] INFO  nextflow.Session - [9f/4cd6d4] Submitted process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)
+Oct-03 22:33:54.466 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv) > jobId: 19567926; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/17/1fd4cfdf16049eb47caeebea35bcc2
+Oct-03 22:33:54.466 [Task submitter] INFO  nextflow.Session - [17/1fd4cf] Submitted process > NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)
+Oct-03 22:33:54.482 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa) > jobId: 19567927; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/0c/72b3072ebfdeb56beee2c31dc455eb
+Oct-03 22:33:54.482 [Task submitter] INFO  nextflow.Session - [0c/72b307] Submitted process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)
+Oct-03 22:34:21.185 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567923; id: 5; name: NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/9f/e04d8f17caf3eacfa875cb9adbf9c7 started: 1696386861181; exited: 2023-10-04T02:34:19Z; ]
+Oct-03 22:34:21.203 [Actor Thread 7] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/ubuntu:20.04 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-ubuntu-20.04.img]
+Oct-03 22:34:22.058 [Actor Thread 7] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/ubuntu:20.04 path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-ubuntu-20.04.img
+Oct-03 22:34:23.694 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT > jobId: 19567929; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/81/6ed19575678ac67c522ba53bf80808
+Oct-03 22:34:23.694 [Task submitter] INFO  nextflow.Session - [81/6ed195] Submitted process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT
+Oct-03 22:34:26.181 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567924; id: 1; name: NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/1b/7c5c0e8386f75a5c8d91682564c37d started: 1696386861213; exited: 2023-10-04T02:34:22Z; ]
+Oct-03 22:34:41.183 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567925; id: 3; name: NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/9f/4cd6d40d2a732f36c8da583b7e243b started: 1696386881180; exited: 2023-10-04T02:34:39Z; ]
+Oct-03 22:34:41.253 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES > Skipping output binding because one or more optional files are missing: fileoutparam<2:1>
+Oct-03 22:34:41.282 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567926; id: 2; name: NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/17/1fd4cfdf16049eb47caeebea35bcc2 started: 1696386881257; exited: 2023-10-04T02:34:40Z; ]
+Oct-03 22:34:41.284 [Actor Thread 18] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/bedtools:2.30.0--hc088bd4_0 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-bedtools-2.30.0--hc088bd4_0.img]
+Oct-03 22:34:41.289 [Actor Thread 11] DEBUG nextflow.util.CacheHelper - Hash asset file sha-256: /jet/home/icaoberg/.nextflow/assets/nf-core/atacseq/bin/get_autosomes.py
+Oct-03 22:34:41.297 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Oct-03 22:34:41.931 [FileTransfer-4] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822153_1.fastq.gz to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/3f/c9726939fb4f26f09d56a732da1447/SRR1822153_1.fastq.gz
+Oct-03 22:34:41.932 [FileTransfer-5] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822153_2.fastq.gz to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/c1/bb7b5bc5af7ddbe2f376ddf903a016/SRR1822153_2.fastq.gz
+Oct-03 22:34:42.069 [Actor Thread 1] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/trim-galore:0.6.7--hdfd78af_0 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-trim-galore-0.6.7--hdfd78af_0.img]
+Oct-03 22:34:42.069 [Actor Thread 12] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://depot.galaxyproject.org/singularity/fastqc:0.11.9--0 [cache /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-fastqc-0.11.9--0.img]
+Oct-03 22:34:42.309 [Actor Thread 18] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/bedtools:2.30.0--hc088bd4_0 path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-bedtools-2.30.0--hc088bd4_0.img
+Oct-03 22:34:42.349 [FileTransfer-6] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822154_1.fastq.gz to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/b3/bca31d02d89aa5a20371a5b0050303/SRR1822154_1.fastq.gz
+Oct-03 22:34:42.450 [FileTransfer-7] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822157_1.fastq.gz to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/64/c3db624ebdab32e5ee5bb988f02b4b/SRR1822157_1.fastq.gz
+Oct-03 22:34:42.451 [FileTransfer-8] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822154_2.fastq.gz to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/f5/9de4d48eec3f1af7db826b5287a8aa/SRR1822154_2.fastq.gz
+Oct-03 22:34:42.512 [FileTransfer-9] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822158_1.fastq.gz to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/34/2213f5a53830710276f3b41da1b92d/SRR1822158_1.fastq.gz
+Oct-03 22:34:42.663 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai) > jobId: 19567939; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/e0/aedf832acaf681f29ce69b93698290
+Oct-03 22:34:42.663 [Task submitter] INFO  nextflow.Session - [e0/aedf83] Submitted process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)
+Oct-03 22:34:42.679 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes) > jobId: 19567940; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/70/5ea5594d60645acc4e7a95ff8a12b4
+Oct-03 22:34:42.679 [Task submitter] INFO  nextflow.Session - [70/5ea559] Submitted process > NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)
+Oct-03 22:34:42.722 [FileTransfer-10] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822157_2.fastq.gz to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/91/483d692a66345a3821d6eac4d9761f/SRR1822157_2.fastq.gz
+Oct-03 22:34:42.876 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/atacseq/testdata/SRR1822158_2.fastq.gz to work dir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/stage-12333870-ab6a-47f8-b8ca-b1ff55abd713/fe/8dd01ec8ff7b53d456c40389a4d6fe/SRR1822158_2.fastq.gz
+Oct-03 22:34:47.749 [Actor Thread 12] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/fastqc:0.11.9--0 path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-fastqc-0.11.9--0.img
+Oct-03 22:34:48.556 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1) > jobId: 19567941; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/f1/e9d297a73b6ed1b4be28aa68c15c90
+Oct-03 22:34:48.556 [Task submitter] INFO  nextflow.Session - [f1/e9d297] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)
+Oct-03 22:34:48.579 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2) > jobId: 19567942; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/f1/237e0a75b81288e5e1585bcd7ee1d4
+Oct-03 22:34:48.579 [Task submitter] INFO  nextflow.Session - [f1/237e0a] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)
+Oct-03 22:34:48.595 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1) > jobId: 19567943; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/19/b1d25f6c688eab840a6ddc094d3c43
+Oct-03 22:34:48.595 [Task submitter] INFO  nextflow.Session - [19/b1d25f] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)
+Oct-03 22:34:48.609 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T1) > jobId: 19567944; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/c6/ab89d57250569c2d8a60a95a337793
+Oct-03 22:34:48.609 [Task submitter] INFO  nextflow.Session - [c6/ab89d5] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T1)
+Oct-03 22:34:48.623 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T2) > jobId: 19567945; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/ee/915df1d2fad32e7a49f093b45837f5
+Oct-03 22:34:48.624 [Task submitter] INFO  nextflow.Session - [ee/915df1] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T2)
+Oct-03 22:34:48.641 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T0_PE_REP1_T1) > jobId: 19567946; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/f1/71658f6c198eab08e145b272d346c0
+Oct-03 22:34:48.641 [Task submitter] INFO  nextflow.Session - [f1/71658f] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T0_PE_REP1_T1)
+Oct-03 22:34:48.655 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP2_T1) > jobId: 19567947; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/29/9460f3cf1512397b1f20eef6a163af
+Oct-03 22:34:48.655 [Task submitter] INFO  nextflow.Session - [29/9460f3] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP2_T1)
+Oct-03 22:34:48.674 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T0_PE_REP2_T1) > jobId: 19567948; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/8b/9674e29f08449e0697c7465b2a018d
+Oct-03 22:34:48.674 [Task submitter] INFO  nextflow.Session - [8b/9674e2] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T0_PE_REP2_T1)
+Oct-03 22:34:49.120 [Actor Thread 1] DEBUG nextflow.container.SingularityCache - Singularity pull complete image=https://depot.galaxyproject.org/singularity/trim-galore:0.6.7--hdfd78af_0 path=/jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/./containers/depot.galaxyproject.org-singularity-trim-galore-0.6.7--hdfd78af_0.img
+Oct-03 22:34:51.325 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T0_PE_REP1_T1) > jobId: 19567949; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/bc/05d0e150ac8fe1758c9b24735ac6d6
+Oct-03 22:34:51.326 [Task submitter] INFO  nextflow.Session - [bc/05d0e1] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T0_PE_REP1_T1)
+Oct-03 22:34:51.356 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T150_SE_REP1_T1) > jobId: 19567950; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/82/713dd1ccf1e215ab0ba6f42c78c363
+Oct-03 22:34:51.356 [Task submitter] INFO  nextflow.Session - [82/713dd1] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T150_SE_REP1_T1)
+Oct-03 22:34:51.372 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T15_PE_REP1_T1) > jobId: 19567951; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/2c/2efdf785552e91854b4b122c5f88fa
+Oct-03 22:34:51.372 [Task submitter] INFO  nextflow.Session - [2c/2efdf7] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T15_PE_REP1_T1)
+Oct-03 22:34:51.391 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T100_SE_REP1_T1) > jobId: 19567952; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/5c/bfb4d5563438fe6f8f1b590ec613e6
+Oct-03 22:34:51.392 [Task submitter] INFO  nextflow.Session - [5c/bfb4d5] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T100_SE_REP1_T1)
+Oct-03 22:34:51.406 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T15_PE_REP1_T2) > jobId: 19567953; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/28/e2a91cfa98e8b558c0732703b0edfc
+Oct-03 22:34:51.406 [Task submitter] INFO  nextflow.Session - [28/e2a91c] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T15_PE_REP1_T2)
+Oct-03 22:34:51.420 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T150_SE_REP1_T2) > jobId: 19567954; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/fe/2df31b72ac84d758702629e338f5c7
+Oct-03 22:34:51.420 [Task submitter] INFO  nextflow.Session - [fe/2df31b] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T150_SE_REP1_T2)
+Oct-03 22:34:51.433 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T0_PE_REP2_T1) > jobId: 19567955; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/e2/2eb8457fafbc625102f26f27f9c3e3
+Oct-03 22:34:51.433 [Task submitter] INFO  nextflow.Session - [e2/2eb845] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T0_PE_REP2_T1)
+Oct-03 22:34:51.447 [Task submitter] DEBUG nextflow.executor.GridTaskHandler - [SLURM] submitted process NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T100_SE_REP2_T1) > jobId: 19567956; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/15/74432fa8fa2922b23eb0dc8454321e
+Oct-03 22:34:51.447 [Task submitter] INFO  nextflow.Session - [15/74432f] Submitted process > NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:TRIMGALORE (OSMOTIC_STRESS_T100_SE_REP2_T1)
+Oct-03 22:35:16.185 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567929; id: 6; name: NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT; status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/81/6ed19575678ac67c522ba53bf80808 started: 1696386916184; exited: 2023-10-04T02:35:11Z; ]
+Oct-03 22:35:16.196 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567939; id: 8; name: NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/e0/aedf832acaf681f29ce69b93698290 started: 1696386916194; exited: 2023-10-04T02:35:16Z; ]
+Oct-03 22:35:21.184 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567927; id: 4; name: NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/0c/72b3072ebfdeb56beee2c31dc455eb started: 1696386916182; exited: 2023-10-04T02:35:16Z; ]
+Oct-03 22:35:36.185 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567940; id: 7; name: NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/70/5ea5594d60645acc4e7a95ff8a12b4 started: 1696386936183; exited: 2023-10-04T02:35:33Z; ]
+Oct-03 22:35:41.184 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567941; id: 21; name: NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/f1/e9d297a73b6ed1b4be28aa68c15c90 started: 1696386936192; exited: 2023-10-04T02:35:36Z; ]
+Oct-03 22:35:41.200 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567942; id: 20; name: NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/f1/237e0a75b81288e5e1585bcd7ee1d4 started: 1696386936192; exited: 2023-10-04T02:35:36Z; ]
+Oct-03 22:35:41.214 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[jobId: 19567943; id: 13; name: NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1); status: COMPLETED; exit: 0; error: -; workDir: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/19/b1d25f6c688eab840a6ddc094d3c43 started: 1696386936193; exited: 2023-10-04T02:35:39Z; ]
+Oct-03 22:35:47.228 [SIGINT handler] DEBUG nextflow.Session - Session aborted -- Cause: SIGINT
+Oct-03 22:35:47.248 [SIGINT handler] DEBUG nextflow.Session - The following nodes are still active:
+[process] NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BWA_MEM
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (value) bound ; channel: sort_bam
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:FASTQ_ALIGN_BWA:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_LIBRARY
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (value) bound ; channel: -
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAMTOOLS_FILTER
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: bed
+  port 2: (value) bound ; channel: bamtools_filter_se_config
+  port 3: (value) bound ; channel: bamtools_filter_pe_config
+  port 4: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_INDEX
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:SAMTOOLS_SORT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_REMOVE_ORPHANS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_SORT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:SAMTOOLS_INDEX
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_FILTER_BAM:BAM_SORT_STATS_SAMTOOLS:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_PICARD_COLLECTMULTIPLEMETRICS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (value) bound ; channel: -
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: sizes
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_SCALE_REGIONS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: bed
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_COMPUTEMATRIX_REFERENCE_POINT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: bed
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTPROFILE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_BIGWIG_PLOT_DEEPTOOLS:DEEPTOOLS_PLOTHEATMAP
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_DEEPTOOLS_PLOTFINGERPRINT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: macs2_gsize
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: peak_count_header
+  port 2: (value) bound ; channel: frip_score_header
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: fasta
+  port 2: (value) bound ; channel: gtf
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: peaks
+  port 1: (value) bound ; channel: is_narrow_peak
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: annos
+  port 1: (value) bound ; channel: mqc_header
+  port 2: (value) bound ; channel: suffix
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:MACS2_CONSENSUS
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: -
+  port 1: (value) bound ; channel: is_narrow_peak
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: -
+  port 1: (value) bound ; channel: fasta
+  port 2: (value) bound ; channel: gtf
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_CONSENSUS_PEAKS:DESEQ2_QC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: -
+  port 1: (value) bound ; channel: deseq2_pca_header
+  port 2: (value) bound ; channel: deseq2_clustering_header
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_ATAQV
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: organism
+  port 2: (value) bound ; channel: mito_name
+  port 3: (value) bound ; channel: tss_file
+  port 4: (value) bound ; channel: excl_regs_file
+  port 5: (value) bound ; channel: autosom_ref_file
+  port 6: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_LIBRARY_ATAQV_MKARV
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: jsons/*
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:PICARD_MERGESAMFILES_REPLICATE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:PICARD_MARKDUPLICATES
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (value) bound ; channel: -
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:SAMTOOLS_INDEX
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_STATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: -
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_FLAGSTAT
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:BEDTOOLS_GENOMECOV
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_BAM_TO_BIGWIG:UCSC_BEDGRAPHTOBIGWIG
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: sizes
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MACS2_CALLPEAK
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: macs2_gsize
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:FRIP_SCORE
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:MULTIQC_CUSTOM_PEAKS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: peak_count_header
+  port 2: (value) bound ; channel: frip_score_header
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: -
+  port 1: (value) bound ; channel: fasta
+  port 2: (value) bound ; channel: gtf
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_MACS2_QC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: peaks
+  port 1: (value) bound ; channel: is_narrow_peak
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:PLOT_HOMER_ANNOTATEPEAKS
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: annos
+  port 1: (value) bound ; channel: mqc_header
+  port 2: (value) bound ; channel: suffix
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:MACS2_CONSENSUS
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: -
+  port 1: (value) bound ; channel: is_narrow_peak
+  port 2: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:HOMER_ANNOTATEPEAKS
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: -
+  port 1: (value) bound ; channel: fasta
+  port 2: (value) bound ; channel: gtf
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:SUBREAD_FEATURECOUNTS
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: -
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CONSENSUS_PEAKS:DESEQ2_QC
+  status=ACTIVE
+  port 0: (value) OPEN  ; channel: -
+  port 1: (value) bound ; channel: deseq2_pca_header
+  port 2: (value) bound ; channel: deseq2_clustering_header
+  port 3: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:IGV
+  status=ACTIVE
+  port 0: (value) bound ; channel: fasta
+  port 1: (value) bound ; channel: fai
+  port 2: (value) OPEN  ; channel: __$pathinparam<2>
+  port 3: (value) OPEN  ; channel: __$pathinparam<3>
+  port 4: (value) OPEN  ; channel: __$pathinparam<4>
+  port 5: (value) OPEN  ; channel: __$pathinparam<5>
+  port 6: (value) OPEN  ; channel: __$pathinparam<6>
+  port 7: (value) OPEN  ; channel: __$pathinparam<7>
+  port 8: (value) bound ; channel: bigwig_library_publish_dir
+  port 9: (value) bound ; channel: peak_library_publish_dir
+  port 10: (value) bound ; channel: consensus_library_publish_dir
+  port 11: (value) bound ; channel: bigwig_replicate_publish_dir
+  port 12: (value) bound ; channel: peak_replicate_publish_dir
+  port 13: (value) bound ; channel: consensus_replicate_publish_dir
+  port 14: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:CUSTOM_DUMPSOFTWAREVERSIONS
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: versions
+  port 1: (cntrl) -     ; channel: $
+
+[process] NFCORE_ATACSEQ:ATACSEQ:MULTIQC
+  status=ACTIVE
+  port 0: (queue) OPEN  ; channel: multiqc_config
+  port 1: (value) bound ; channel: multiqc_custom_config
+  port 2: (value) OPEN  ; channel: software_versions
+  port 3: (queue) OPEN  ; channel: workflow_summary
+  port 4: (value) OPEN  ; channel: fastqc/*
+  port 5: (value) OPEN  ; channel: trimgalore/fastqc/*
+  port 6: (value) OPEN  ; channel: trimgalore/*
+  port 7: (value) OPEN  ; channel: alignment/library/*
+  port 8: (value) OPEN  ; channel: alignment/library/*
+  port 9: (value) OPEN  ; channel: alignment/library/*
+  port 10: (value) OPEN  ; channel: alignment/merged_library/unfiltered/*
+  port 11: (value) OPEN  ; channel: alignment/merged_library/unfiltered/*
+  port 12: (value) OPEN  ; channel: alignment/merged_library/unfiltered/*
+  port 13: (value) OPEN  ; channel: alignment/merged_library/unfiltered/picard_metrics/*
+  port 14: (value) OPEN  ; channel: alignment/merged_library/filtered/*
+  port 15: (value) OPEN  ; channel: alignment/merged_library/filtered/*
+  port 16: (value) OPEN  ; channel: alignment/merged_library/filtered/*
+  port 17: (value) OPEN  ; channel: alignment/merged_library/filtered/picard_metrics/*
+  port 18: (value) bound ; channel: preseq/*
+  port 19: (value) OPEN  ; channel: deeptools/*
+  port 20: (value) OPEN  ; channel: deeptools/*
+  port 21: (value) OPEN  ; channel: macs2/merged_library/peaks/*
+  port 22: (value) OPEN  ; channel: macs2/merged_library/peaks/*
+  port 23: (value) OPEN  ; channel: macs2/merged_library/annotation/*
+  port 24: (value) OPEN  ; channel: macs2/merged_library/featurecounts/*
+  port 25: (value) OPEN  ; channel: alignment/merged_replicate/*
+  port 26: (value) OPEN  ; channel: alignment/merged_replicate/*
+  port 27: (value) OPEN  ; channel: alignment/merged_replicate/*
+  port 28: (value) OPEN  ; channel: alignment/merged_replicate/picard_metrics/*
+  port 29: (value) OPEN  ; channel: macs2/merged_replicate/peaks/*
+  port 30: (value) OPEN  ; channel: macs2/merged_replicate/peaks/*
+  port 31: (value) OPEN  ; channel: macs2/merged_replicate/annotation/*
+  port 32: (value) OPEN  ; channel: macs2/merged_replicate/featurecounts/*
+  port 33: (value) OPEN  ; channel: deseq2_library/*
+  port 34: (value) OPEN  ; channel: deseq2_library/*
+  port 35: (value) OPEN  ; channel: deseq2_replicate/*
+  port 36: (value) OPEN  ; channel: deseq2_replicate/*
+  port 37: (cntrl) -     ; channel: $
+
+Oct-03 22:35:47.250 [main] DEBUG nextflow.Session - Session await > all processes finished
+Oct-03 22:35:47.250 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Oct-03 22:35:47.255 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/atacseq][0;31m Pipeline completed with errors[0m-
+Oct-03 22:35:47.256 [Actor Thread 12] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_MARKDUPLICATES_PICARD:BAM_STATS_SAMTOOLS:SAMTOOLS_IDXSTATS; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:35:47.256 [Actor Thread 19] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_ATACSEQ:ATACSEQ:MERGED_REPLICATE_CALL_ANNOTATE_PEAKS:HOMER_ANNOTATEPEAKS; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Oct-03 22:35:47.259 [main] WARN  n.processor.TaskPollingMonitor - Killing running tasks (13)
+Oct-03 22:35:47.264 [Actor Thread 15] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 9; slices: 1; internal sort time: 0.009 s; external sort time: 0.001 s; total time: 0.01 s
+Oct-03 22:35:47.271 [Actor Thread 15] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /jet/home/icaoberg/workflow-examples/nextflow/nfcore/atacseq/work/collect-file/703a6f4af9fd6f56f95bfc73490d1eff
+Oct-03 22:35:47.272 [Actor Thread 15] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-2118723104618941053
+Oct-03 22:35:47.284 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=11; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=13; runningCount=-13; retriesCount=0; abortedCount=13; succeedDuration=36s; failedDuration=0ms; cachedDuration=0ms;loadCpus=-26; loadMemory=0; peakRunning=3; peakCpus=6; peakMemory=18 GB; ]
+Oct-03 22:35:47.284 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Oct-03 22:35:47.285 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Oct-03 22:35:47.324 [main] DEBUG nextflow.trace.ReportObserver - Execution report summary data:
+  [{"cpuUsage":{"mean":48.3,"min":48.3,"q1":48.3,"q2":48.3,"q3":48.3,"max":48.3,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)"},"process":"GTF2BED","mem":{"mean":3473408,"min":3473408,"q1":3473408,"q2":3473408,"q3":3473408,"max":3473408,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)"},"memUsage":{"mean":0.05,"min":0.05,"q1":0.05,"q2":0.05,"q3":0.05,"max":0.05,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)"},"timeUsage":{"mean":0.01,"min":0.01,"q1":0.01,"q2":0.01,"q3":0.01,"max":0.01,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)"},"vmem":{"mean":27676672,"min":27676672,"q1":27676672,"q2":27676672,"q3":27676672,"max":27676672,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)"},"reads":{"mean":12262785,"min":12262785,"q1":12262785,"q2":12262785,"q3":12262785,"max":12262785,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)"},"cpu":{"mean":96.6,"min":96.6,"q1":96.6,"q2":96.6,"q3":96.6,"max":96.6,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)"},"time":{"mean":1000,"min":1000,"q1":1000,"q2":1000,"q3":1000,"max":1000,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)"},"writes":{"mean":401960,"min":401960,"q1":401960,"q2":401960,"q3":401960,"max":401960,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GTF2BED (genes.gtf)"}},{"cpuUsage":{"mean":97.9,"min":97.9,"q1":97.9,"q2":97.9,"q3":97.9,"max":97.9,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)"},"process":"BWA_INDEX","mem":{"mean":132960256,"min":132960256,"q1":132960256,"q2":132960256,"q3":132960256,"max":132960256,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)"},"memUsage":{"mean":2.06,"min":2.06,"q1":2.06,"q2":2.06,"q3":2.06,"max":2.06,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)"},"timeUsage":{"mean":0.03,"min":0.03,"q1":0.03,"q2":0.03,"q3":0.03,"max":0.03,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)"},"vmem":{"mean":151515136,"min":151515136,"q1":151515136,"q2":151515136,"q3":151515136,"max":151515136,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)"},"reads":{"mean":56645982,"min":56645982,"q1":56645982,"q2":56645982,"q3":56645982,"max":56645982,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)"},"cpu":{"mean":97.9,"min":97.9,"q1":97.9,"q2":97.9,"q3":97.9,"max":97.9,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)"},"time":{"mean":4000,"min":4000,"q1":4000,"q2":4000,"q3":4000,"max":4000,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)"},"writes":{"mean":33436159,"min":33436159,"q1":33436159,"q2":33436159,"q3":33436159,"max":33436159,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:BWA_INDEX (genome.fa)"}},{"cpuUsage":{"mean":79,"min":79,"q1":79,"q2":79,"q3":79,"max":79,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)"},"process":"CUSTOM_GETCHROMSIZES","mem":{"mean":4972544,"min":4972544,"q1":4972544,"q2":4972544,"q3":4972544,"max":4972544,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)"},"memUsage":{"mean":0.08,"min":0.08,"q1":0.08,"q2":0.08,"q3":0.08,"max":0.08,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)"},"timeUsage":null,"vmem":{"mean":12279808,"min":12279808,"q1":12279808,"q2":12279808,"q3":12279808,"max":12279808,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)"},"reads":{"mean":12496344,"min":12496344,"q1":12496344,"q2":12496344,"q3":12496344,"max":12496344,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)"},"cpu":{"mean":79,"min":79,"q1":79,"q2":79,"q3":79,"max":79,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)"},"time":null,"writes":{"mean":5630,"min":5630,"q1":5630,"q2":5630,"q3":5630,"max":5630,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:CUSTOM_GETCHROMSIZES (genome.fa)"}},{"cpuUsage":{"mean":80.3,"min":80.3,"q1":80.3,"q2":80.3,"q3":80.3,"max":80.3,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)"},"process":"SAMPLESHEET_CHECK","mem":{"mean":3510272,"min":3510272,"q1":3510272,"q2":3510272,"q3":3510272,"max":3510272,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)"},"memUsage":{"mean":0.05,"min":0.05,"q1":0.05,"q2":0.05,"q3":0.05,"max":0.05,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)"},"timeUsage":null,"vmem":{"mean":23818240,"min":23818240,"q1":23818240,"q2":23818240,"q3":23818240,"max":23818240,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)"},"reads":{"mean":1538203,"min":1538203,"q1":1538203,"q2":1538203,"q3":1538203,"max":1538203,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)"},"cpu":{"mean":80.3,"min":80.3,"q1":80.3,"q2":80.3,"q3":80.3,"max":80.3,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)"},"time":null,"writes":{"mean":1872,"min":1872,"q1":1872,"q2":1872,"q3":1872,"max":1872,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (samplesheet_test.csv)"}},{"cpuUsage":{"mean":90.6,"min":90.6,"q1":90.6,"q2":90.6,"q3":90.6,"max":90.6,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT"},"process":"TSS_EXTRACT","mem":{"mean":3031040,"min":3031040,"q1":3031040,"q2":3031040,"q3":3031040,"max":3031040,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT"},"memUsage":{"mean":0.05,"min":0.05,"q1":0.05,"q2":0.05,"q3":0.05,"max":0.05,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT"},"timeUsage":null,"vmem":{"mean":4083712,"min":4083712,"q1":4083712,"q2":4083712,"q3":4083712,"max":4083712,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT"},"reads":{"mean":923496,"min":923496,"q1":923496,"q2":923496,"q3":923496,"max":923496,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT"},"cpu":{"mean":90.6,"min":90.6,"q1":90.6,"q2":90.6,"q3":90.6,"max":90.6,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT"},"time":{"mean":21,"min":21,"q1":21,"q2":21,"q3":21,"max":21,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT"},"writes":{"mean":612262,"min":612262,"q1":612262,"q2":612262,"q3":612262,"max":612262,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:TSS_EXTRACT"}},{"cpuUsage":{"mean":79.4,"min":79.4,"q1":79.4,"q2":79.4,"q3":79.4,"max":79.4,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)"},"process":"GET_AUTOSOMES","mem":{"mean":3510272,"min":3510272,"q1":3510272,"q2":3510272,"q3":3510272,"max":3510272,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)"},"memUsage":{"mean":0.05,"min":0.05,"q1":0.05,"q2":0.05,"q3":0.05,"max":0.05,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)"},"timeUsage":{"mean":0.01,"min":0.01,"q1":0.01,"q2":0.01,"q3":0.01,"max":0.01,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)"},"vmem":{"mean":28061696,"min":28061696,"q1":28061696,"q2":28061696,"q3":28061696,"max":28061696,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)"},"reads":{"mean":1514224,"min":1514224,"q1":1514224,"q2":1514224,"q3":1514224,"max":1514224,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)"},"cpu":{"mean":79.4,"min":79.4,"q1":79.4,"q2":79.4,"q3":79.4,"max":79.4,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)"},"time":{"mean":1000,"min":1000,"q1":1000,"q2":1000,"q3":1000,"max":1000,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)"},"writes":{"mean":444,"min":444,"q1":444,"q2":444,"q3":444,"max":444,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GET_AUTOSOMES (genome.fa.fai)"}},{"cpuUsage":{"mean":170.5,"min":170.5,"q1":170.5,"q2":170.5,"q3":170.5,"max":170.5,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)"},"process":"KHMER_UNIQUEKMERS","mem":{"mean":52715520,"min":52715520,"q1":52715520,"q2":52715520,"q3":52715520,"max":52715520,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)"},"memUsage":{"mean":0.82,"min":0.82,"q1":0.82,"q2":0.82,"q3":0.82,"max":0.82,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)"},"timeUsage":{"mean":0.01,"min":0.01,"q1":0.01,"q2":0.01,"q3":0.01,"max":0.01,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)"},"vmem":{"mean":1202864128,"min":1202864128,"q1":1202864128,"q2":1202864128,"q3":1202864128,"max":1202864128,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)"},"reads":{"mean":21949337,"min":21949337,"q1":21949337,"q2":21949337,"q3":21949337,"max":21949337,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)"},"cpu":{"mean":341,"min":341,"q1":341,"q2":341,"q3":341,"max":341,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)"},"time":{"mean":2000,"min":2000,"q1":2000,"q2":2000,"q3":2000,"max":2000,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)"},"writes":{"mean":3567,"min":3567,"q1":3567,"q2":3567,"q3":3567,"max":3567,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:KHMER_UNIQUEKMERS (genome.fa)"}},{"cpuUsage":{"mean":96.1,"min":96.1,"q1":96.1,"q2":96.1,"q3":96.1,"max":96.1,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)"},"process":"GENOME_BLACKLIST_REGIONS","mem":{"mean":2916352,"min":2916352,"q1":2916352,"q2":2916352,"q3":2916352,"max":2916352,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)"},"memUsage":{"mean":0.05,"min":0.05,"q1":0.05,"q2":0.05,"q3":0.05,"max":0.05,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)"},"timeUsage":{"mean":0.01,"min":0.01,"q1":0.01,"q2":0.01,"q3":0.01,"max":0.01,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)"},"vmem":{"mean":11575296,"min":11575296,"q1":11575296,"q2":11575296,"q3":11575296,"max":11575296,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)"},"reads":{"mean":71848,"min":71848,"q1":71848,"q2":71848,"q3":71848,"max":71848,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)"},"cpu":{"mean":96.1,"min":96.1,"q1":96.1,"q2":96.1,"q3":96.1,"max":96.1,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)"},"time":{"mean":1000,"min":1000,"q1":1000,"q2":1000,"q3":1000,"max":1000,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)"},"writes":{"mean":830,"min":830,"q1":830,"q2":830,"q3":830,"max":830,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:PREPARE_GENOME:GENOME_BLACKLIST_REGIONS (genome.fa.sizes)"}},{"cpuUsage":{"mean":87.23,"min":78.5,"q1":79.1,"q2":79.7,"q3":91.6,"max":103.5,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)"},"process":"FASTQC","mem":{"mean":308540757.33,"min":255717376,"q1":257394688,"q2":259072000,"q3":334952448,"max":410832896,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)"},"memUsage":{"mean":4.79,"min":3.97,"q1":4,"q2":4.02,"q3":5.2,"max":6.38,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)"},"timeUsage":{"mean":0.02,"min":0.02,"q1":0.02,"q2":0.02,"q3":0.02,"max":0.02,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)"},"vmem":{"mean":3917996032,"min":3829964800,"q1":3830491136,"q2":3831017472,"q3":3962011648,"max":4093005824,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)"},"reads":{"mean":28378128,"min":26106762,"q1":26147660.5,"q2":26188559,"q3":29513811,"max":32839063,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)"},"cpu":{"mean":174.47,"min":157,"q1":158.2,"q2":159.4,"q3":183.2,"max":207,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)"},"time":{"mean":4000,"min":4000,"q1":4000,"q2":4000,"q3":4000,"max":4000,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)"},"writes":{"mean":2780841.67,"min":2078205,"q1":2085466,"q2":2092727,"q3":3132160,"max":4171593,"minLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","maxLabel":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T15_PE_REP1_T1)","q1Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T100_SE_REP1_T1)","q2Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)","q3Label":"NFCORE_ATACSEQ:ATACSEQ:FASTQ_FASTQC_UMITOOLS_TRIMGALORE:FASTQC (OSMOTIC_STRESS_T150_SE_REP1_T2)"}},{"cpuUsage":null,"process":"TRIMGALORE","mem":null,"memUsage":null,"timeUsage":null,"vmem":null,"reads":null,"cpu":null,"time":null,"writes":null}]
+Oct-03 22:35:47.769 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Oct-03 22:35:47.874 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Oct-03 22:35:47.874 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-amazon@1.16.2'
+Oct-03 22:35:47.874 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-amazon
+Oct-03 22:35:47.874 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-validation@0.3.2'
+Oct-03 22:35:47.874 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-validation
+Oct-03 22:35:47.893 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
