@@ -1,0 +1,16 @@
+#!/bin/bash
+
+VERSION=2.3.1
+PACKAGE=ncdu
+TOOL=$PACKAGE
+DIRECTORY=$(dirname $0)
+
+OPTIONS=""
+for STORAGE in "${STORAGES[@]}"
+do
+	if [ -d "$STORAGE" ]; then
+		OPTIONS=$OPTIONS" -B $STORAGE"
+	fi
+done
+
+singularity exec $OPTIONS $DIRECTORY/singularity-$PACKAGE-$VERSION.sif $TOOL "$@"
