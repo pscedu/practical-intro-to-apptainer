@@ -15,7 +15,9 @@ Why should I attend? Data exploration from HuBMAP public data within the context
 
 ### Presenters
 Ivan E. Cao-Berg
+
 Research Software Specialist
+
 Pittsburgh Supercomputing Center
 
 Luis E. Vázquez Quiñones
