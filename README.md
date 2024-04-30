@@ -28,17 +28,17 @@ Where: Ana G. Mendez - Muñiz-Souffront 120
 
 ## Agenda
 
-| Schedule       | Description                                                                                                                                                                                | 
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 9:00am-12:00pm | What is ACCESS? What is Bridges-2?  What is HuBMAP? Using OnDemand on Bridges-2                                                                                                            |
-| 12:00pm-1:00pm | Lunch                                                                                                                                                                                      |
-| 1:00pm-4:00pm  | HuBMAP Hands On Data Exploration Exercises 
+March 20, 2024
 
-* Connecting to Bridges-2 OnDemand. * Uploading Jupyter notebooks.
+| Schedule       | Description                                                                                                                                           |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 9:00am-12:00pm | What is ACCESS? What is Bridges-2?  What is HuBMAP? Using OnDemand on Bridges-2                                                                       |
+| 12:00pm-1:00pm | Lunch                                                                                                                                                 |
+| 1:00pm-4:00pm  | HuBMAP Hands On Data Exploration Exercises: Connecting to Bridges-2 OnDemand, scRNA-seq Data Analysis, Super Venn diagrams and classical Venn diagram |
 
-* scRNA-seq Data Analysis.
+March 21, 2024
 
-* * Super Venn diagrams and classical Venn diagrams |
+
 
 ---
 Copyright © 2024 Pittsburgh Supercomputing Center. All Rights Reserved.
