@@ -23,8 +23,8 @@ PR-INBRE BiRC co-director & Research and Education sub-core Director
 Inter American University of Puerto Rico – Arecibo Campus
 
 ### Location
-This workshop is open to members of [PR-INBRE](https://inbre.hpcf.upr.edu/) Bioinformatics Community of Practice (BiCoP).
 
+This workshop is open to members of [PR-INBRE](https://inbre.hpcf.upr.edu/) Bioinformatics Community of Practice (BiCoP).
 
 Date: March 19, 2024
 Location: University of Puerto Rico - Medical Science Campus
