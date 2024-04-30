@@ -26,10 +26,9 @@ Inter American University of Puerto Rico – Arecibo Campus
 
 This workshop is open to members of [PR-INBRE](https://inbre.hpcf.upr.edu/) Bioinformatics Community of Practice (BiCoP).
 
-Date: March 19, 2024
-Location: University of Puerto Rico - Medical Science Campus
-Building: Center for Informatics and Technology 8th Floor
-8:30am to 4:00
+Date: March 20-21, 2024
+
+Where: Ana G. Mendez - Muñiz-Souffront 120
 
 ---
 Copyright © 2024 Pittsburgh Supercomputing Center. All Rights Reserved.
