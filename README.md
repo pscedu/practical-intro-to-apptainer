@@ -14,15 +14,9 @@ Who should attend? Faculty, research staff and students looking to learn more ab
 Why should I attend? Data exploration from HuBMAP public data within the context of open science and FAIR principles fosters collaborative research and knowledge discovery. Researchers can freely access and analyze diverse datasets encompassing human tissue samples, promoting transparency and reproducibility in biomedical research. By adhering to FAIR principles, HuBMAP ensures that data are findable, accessible, interoperable, and reusable, facilitating comprehensive exploration of human biology and disease mechanisms across scientific disciplines. This open approach empowers scientists to uncover novel insights into tissue architecture, cellular interactions, and molecular profiles, advancing our understanding of human health and paving the way for innovative medical interventions.
 
 ### Presenters
-Ivan E. Cao-Berg
+Ivan E. Cao-Berg - Research Software Specialist - Pittsburgh Supercomputing Center
 
-Research Software Specialist
-
-Pittsburgh Supercomputing Center
-
-Luis E. Vázquez Quiñones
-PR-INBRE BiRC co-director & Research and Education sub-core Director
-Inter American University of Puerto Rico – Arecibo Campus
+Luis E. Vázquez Quiñones - PR-INBRE BiRC co-director & Research and Education sub-core Director - Inter American University of Puerto Rico – Arecibo Campus
 
 ### Location
 
